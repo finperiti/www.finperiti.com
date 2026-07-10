@@ -1,1 +1,11 @@
+# Local tooling
+.claude/
+node_modules/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives
 *.zip
