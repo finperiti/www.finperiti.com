@@ -1491,6 +1491,11 @@
         border-color: var(--petrol);
         background: var(--white);
       }
+      #ctForm.was-validated .ct-field input:invalid,
+      #ctForm.was-validated .ct-field textarea:invalid {
+        border-color: #b23b3b;
+        background: rgba(220, 80, 80, 0.05);
+      }
       .ct-field textarea {
         resize: vertical;
         min-height: 120px;
@@ -1618,7 +1623,29 @@
               Oops! Something went wrong. Please try again or email us at
               team@finperiti.com.
             </div>
-            <form id="ctForm" novalidate>
+            <form
+              id="ctForm"
+              method="POST"
+              action="https://api.web3forms.com/submit"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="7abf0add-2734-49c2-b132-2ac6a184e67d"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New contact enquiry — Finperiti website"
+              />
+              <input type="hidden" name="from_name" value="Finperiti Website" />
+              <input
+                type="checkbox"
+                name="botcheck"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
               <div class="ct-field">
                 <label for="ct-name">Name</label>
                 <input
@@ -1782,49 +1809,37 @@
         if (!form) return;
         var ok = document.getElementById("ctSuccess");
         var err = document.getElementById("ctError");
-        // TODO: replace ENDPOINT with your Formspree/Azure Function URL when ready.
-        var ENDPOINT = "";
+        form.addEventListener(
+          "invalid",
+          function () {
+            form.classList.add("was-validated");
+          },
+          true,
+        );
         form.addEventListener("submit", function (e) {
+          if (!form.checkValidity()) {
+            e.preventDefault();
+            form.classList.add("was-validated");
+            return;
+          }
+          if (form.botcheck.checked) {
+            // Honeypot tripped — silently drop, let it look like a normal submit to bots.
+            e.preventDefault();
+            return;
+          }
           e.preventDefault();
           ok.classList.remove("show");
           err.classList.remove("show");
-          var data = {
-            name: form.name.value,
-            email: form.email.value,
-            company: form.company.value,
-            message: form.message.value,
-          };
-          if (!ENDPOINT) {
-            // Fallback: open user's email client pre-filled to team@finperiti.com
-            var subject = encodeURIComponent(
-              "Website enquiry from " +
-                data.name +
-                (data.company ? " (" + data.company + ")" : ""),
-            );
-            var body = encodeURIComponent(
-              data.message +
-                "\n\n—\n" +
-                data.name +
-                "\n" +
-                data.email +
-                (data.company ? "\n" + data.company : ""),
-            );
-            window.location.href =
-              "mailto:team@finperiti.com?subject=" + subject + "&body=" + body;
-            ok.classList.add("show");
-            form.reset();
-            return;
-          }
-          fetch(ENDPOINT, {
+          fetch(form.action, {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify(data),
+            headers: { Accept: "application/json" },
+            body: new FormData(form),
           })
             .then(function (r) {
-              if (r.ok) {
+              return r.json();
+            })
+            .then(function (json) {
+              if (json.success) {
                 ok.classList.add("show");
                 form.reset();
               } else {
