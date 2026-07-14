@@ -95,6 +95,193 @@ Impact: Improves visibility in location-based searches and supports European exp
 
 ---
 
+## Exact Keywords & Descriptions Used
+
+### Home Page (index.html)
+**Page URL:** `https://www.finperiti.com/`
+
+**Title Tag:**
+```
+finperiti — AML & KYC Compliance Inside Microsoft 365
+```
+
+**Meta Description:**
+```
+finperiti brings AI-powered AML and KYC onboarding inside Microsoft 365. 
+Automate risk scoring, identity verification and audit trails — no new portals, no IT project.
+```
+
+**Key Terms Targeted:**
+- AML (Anti-Money Laundering)
+- KYC (Know Your Customer)
+- Compliance automation
+- Microsoft 365 integration
+- Identity verification
+- Risk scoring
+- Audit trails
+
+**Organization Schema Description:**
+```
+"description": "AI-powered AML and KYC compliance automation inside Microsoft 365"
+```
+
+**Social Preview (Open Graph & Twitter):**
+- Image: Hero illustration (1200x876px AVIF)
+- Title: Same as page title
+- Description: Same as meta description
+
+---
+
+### About Page (about.html)
+**Page URL:** `https://www.finperiti.com/about`
+
+**Title Tag:**
+```
+About finperiti | Secure Account & Compliance Solutions
+```
+
+**Meta Description:**
+```
+Learn about finperiti, our mission to simplify account management, 
+customer onboarding, risk analysis, and compliance for modern organizations.
+```
+
+**Key Terms Targeted:**
+- Account management
+- Customer onboarding
+- Compliance solutions
+- Risk analysis
+- Secure documentation
+
+**Schema Markup Includes:**
+- Founding date: 2024
+- Founding location: Dublin
+- Team member names and titles:
+  - Fiona Finucane (CEO & Co-Founder)
+  - Richard Metcalfe (CGO & Co-Founder)
+  - Gordon Rudman (CPTO & Co-Founder)
+
+---
+
+### Pricing Page (pricing.html)
+**Page URL:** `https://www.finperiti.com/pricing`
+
+**Title Tag:**
+```
+finperiti Pricing | Flexible Plans for Compliance Management
+```
+
+**Meta Description:**
+```
+Explore finperiti's flexible pricing plans designed for secure customer onboarding, 
+compliance management, and scalable business growth.
+```
+
+**Key Terms Targeted:**
+- Pricing plans
+- Compliance management
+- Customer onboarding
+- Business growth
+- Scalable solutions
+
+**Product Schema Details:**
+- **Product Name:** finperiti
+- **Product Description:** "AI-powered AML and KYC compliance automation inside Microsoft 365"
+- **Brand Name:** Finperiti
+- **Pricing Currency:** EUR
+- **Base Price:** €199 (Core Platform)
+- **Availability:** InStock
+
+---
+
+### Contact Page (contact.html)
+**Page URL:** `https://www.finperiti.com/contact`
+
+**Title Tag:**
+```
+Contact finperiti | Support & Compliance Assistance
+```
+
+**Meta Description:**
+```
+Contact the finperiti team for support, onboarding assistance, 
+compliance queries, or platform-related questions. We're here to help.
+```
+
+**Key Terms Targeted:**
+- Support
+- Onboarding assistance
+- Compliance queries
+- Customer service
+- Technical assistance
+
+**Contact Schema Details:**
+- **Contact Type:** Customer Support
+- **Email:** team@finperiti.com
+- **Areas Served:** IE (Ireland), GB (UK), MT (Malta)
+- **Language:** English
+
+---
+
+### Privacy Policy (privacy-policy.html)
+**Page URL:** `https://www.finperiti.com/privacy-policy`
+
+**Title Tag:**
+```
+Privacy Policy | finperiti
+```
+
+**Meta Description:**
+```
+finperiti Privacy Policy — how we collect, use, disclose, and protect your information.
+```
+
+---
+
+### Terms & Conditions (terms-and-conditions.html)
+**Page URL:** `https://www.finperiti.com/terms-and-conditions`
+
+**Title Tag:**
+```
+finperiti Terms & Conditions | Platform Usage & Policies
+```
+
+**Meta Description:**
+```
+Read finperiti's Terms and Conditions covering platform usage, compliance 
+responsibilities, data protection, and user obligations.
+```
+
+---
+
+## Structured Data Keywords
+
+### Organization Schema (All Pages)
+```json
+{
+  "name": "Finperiti",
+  "description": "AI-powered AML and KYC compliance automation inside Microsoft 365",
+  "sameAs": ["https://www.linkedin.com/company/finperiti"],
+  "address": {
+    "addressCountry": "IE",
+    "addressLocality": "Dublin"
+  },
+  "contactPoint": {
+    "contactType": "Customer Support",
+    "email": "team@finperiti.com"
+  }
+}
+```
+
+### Key Keywords in Structured Data
+- **AI-powered** — Signals machine learning/automation capabilities
+- **AML and KYC** — Core compliance terms
+- **Microsoft 365** — Platform integration focus
+- **Compliance automation** — Primary value proposition
+- **Dublin** — Geographic anchor for local SEO
+
+---
+
 ## Files Created
 
 | File | Purpose |
