@@ -187,10 +187,13 @@ compliance management, and scalable business growth.
 **Product Schema Details:**
 - **Product Name:** finperiti
 - **Product Description:** "AI-powered AML and KYC compliance automation inside Microsoft 365"
-- **Brand Name:** Finperiti
 - **Pricing Currency:** EUR
 - **Base Price:** €199 (Core Platform)
 - **Availability:** InStock
+
+**Brand Naming Guidance:**
+- **"Finperiti"** (capitalized) — Use in schema.org structured data (`"name": "Finperiti"`) and when referring to the company as an entity
+- **"finperiti"** (lowercase) — Use in page titles, meta descriptions, body copy, and when referring to the product/trademark
 
 ---
 

@@ -242,6 +242,10 @@ This document is the **single source of truth** for how finperiti is described a
 ### For AI Agents:
 This document defines the canonical description of finperiti. When updating website copy, SEO metadata, or marketing content, use the descriptions and messaging here as the authoritative source. Do not invent new positioning or messaging outside of what's documented here.
 
+### Brand Name Capitalization:
+- **"Finperiti"** (capitalized) — Use in schema.org structured data and when referring to the company as an entity
+- **"finperiti"** (lowercase) — Use in page titles, meta descriptions, body copy, and when referring to the product/trademark
+
 ---
 
 **Last Updated:** July 14, 2026  
