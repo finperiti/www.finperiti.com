@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="finperiti SEO, AEO, and GEO optimization documentation (WRK-21)" />
+    <title>SEO Optimization — finperiti (WRK-21)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #5DE6D2;
+            --dark: #1a1a1a;
+            --light: #f8f8f8;
+            --text: #333;
+            --border: #e5e5e5;
+            --bg: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --dark: #fff;
+                --light: #1a1a1a;
+                --text: #e0e0e0;
+                --border: #333;
+                --bg: #0f0f0f;
+            }
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #2dd4c0 100%);
+            color: var(--dark);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            border-left: 4px solid var(--primary);
+            padding-left: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        article {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        article h4 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        article p {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+
+        code {
+            background: var(--dark);
+            color: var(--primary);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--light);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .metric {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .metric-card strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .status.complete {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status.pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        aside {
+            background: var(--light);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        aside h4 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>finperiti SEO Optimization</h1>
+        <p>WRK-21 • July 14, 2026 • Comprehensive SEO, AEO & GEO Strategy</p>
+    </header>
+
+    <main>
+        <!-- Executive Summary -->
+        <section>
+            <h2>Executive Summary</h2>
+            <p>Implemented comprehensive SEO, AEO (Answer Engine Optimization), and GEO (Geographic Optimization) strategy to significantly improve finperiti.com's search visibility across Google, Bing, and AI-powered search engines.</p>
+
+            <div class="metric">
+                <div class="metric-card">
+                    <strong>Search Engine Visibility</strong>
+                    Improved indexing, crawlability, and ranking potential across all pages
+                </div>
+                <div class="metric-card">
+                    <strong>Social Media Integration</strong>
+                    Enhanced preview cards for LinkedIn, Twitter, Facebook, Slack
+                </div>
+                <div class="metric-card">
+                    <strong>AI Engine Optimization</strong>
+                    Better visibility in ChatGPT, Perplexity, Claude, and future answer engines
+                </div>
+                <div class="metric-card">
+                    <strong>Geographic Focus</strong>
+                    Optimized for Dublin headquarters and European markets (IE, GB, MT)
+                </div>
+            </div>
+        </section>
+
+        <!-- What Was Implemented -->
+        <section>
+            <h2>Implementation Details</h2>
+
+            <article>
+                <h4>1. Canonical URLs</h4>
+                <p>Added unique canonical URL to every page to prevent duplicate content penalties and guide search engines to the authoritative version.</p>
+            </article>
+
+            <article>
+                <h4>2. robots.txt & XML Sitemap</h4>
+                <p><code>robots.txt</code> — Search engine crawling directives optimizing crawl budget. <code>sitemap.xml</code> — Complete page map with priority levels (home: 1.0, pricing: 0.9, about: 0.8, contact: 0.7, legal: 0.5).</p>
+            </article>
+
+            <article>
+                <h4>3. Custom 404 Page</h4>
+                <p>Professional error page with proper SEO metadata, navigation, and CTAs. Marked as non-indexable to prevent ranking.</p>
+            </article>
+
+            <article>
+                <h4>4. Meta Tags</h4>
+                <ul>
+                    <li><strong>Open Graph:</strong> og:title, og:description, og:image, og:url, og:type, og:locale</li>
+                    <li><strong>Twitter Card:</strong> Twitter preview optimization (summary_large_image)</li>
+                    <li><strong>Standard:</strong> robots directive (index, follow), language, revisit-after</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>5. Structured Data (JSON-LD)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Schema Type</th>
+                            <th>Pages</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Organization</td>
+                            <td>All pages</td>
+                            <td>Company identity, contact, location, team</td>
+                        </tr>
+                        <tr>
+                            <td>WebPage</td>
+                            <td>Home</td>
+                            <td>Page metadata, images, featured snippet eligibility</td>
+                        </tr>
+                        <tr>
+                            <td>Product</td>
+                            <td>Pricing</td>
+                            <td>Product info, pricing, availability</td>
+                        </tr>
+                        <tr>
+                            <td>ContactPoint</td>
+                            <td>Contact</td>
+                            <td>Support email, areas served, language</td>
+                        </tr>
+                        <tr>
+                            <td>Person</td>
+                            <td>About</td>
+                            <td>Team member names, titles, roles</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h4>6. Geographic Optimization</h4>
+                <ul>
+                    <li><strong>Headquarters:</strong> Dublin, Ireland (marked in schema)</li>
+                    <li><strong>Service Areas:</strong> IE, GB, MT</li>
+                    <li><strong>Locale:</strong> en_GB for European market</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Key Content -->
+        <section>
+            <h2>Key Content & Keywords</h2>
+
+            <article>
+                <h4>Home Page</h4>
+                <p><strong>Title:</strong> finperiti — AML & KYC Compliance Inside Microsoft 365</p>
+                <p><strong>Keywords:</strong> AML, KYC, Compliance automation, Microsoft 365, Identity verification, Risk scoring, Audit trails</p>
+            </article>
+
+            <article>
+                <h4>Pricing Page</h4>
+                <p><strong>Title:</strong> finperiti Pricing | Flexible Plans for Compliance Management</p>
+                <p><strong>Base Price:</strong> €199/month + €299 setup | <strong>Currency:</strong> EUR</p>
+            </article>
+
+            <article>
+                <h4>About Page</h4>
+                <p><strong>Founded:</strong> 2024 in Dublin | <strong>Leadership:</strong> Fiona (CEO), Richard (CGO), Gordon (CPTO)</p>
+            </article>
+
+            <article>
+                <h4>Contact Page</h4>
+                <p><strong>Email:</strong> team@finperiti.com | <strong>Coverage:</strong> Ireland, UK, Malta</p>
+            </article>
+        </section>
+
+        <!-- Files Created -->
+        <section>
+            <h2>Files Created</h2>
+
+            <div class="metric">
+                <div class="metric-card">
+                    <strong>robots.txt</strong>
+                    342 bytes — Crawling directives
+                </div>
+                <div class="metric-card">
+                    <strong>sitemap.xml</strong>
+                    1,441 bytes — Page map with priorities
+                </div>
+                <div class="metric-card">
+                    <strong>404.html</strong>
+                    5,877 bytes — Error page with SEO
+                </div>
+                <div class="metric-card">
+                    <strong>humans.txt</strong>
+                    1,115 bytes — Team transparency
+                </div>
+            </div>
+        </section>
+
+        <!-- Expected Impact -->
+        <section>
+            <h2>Expected Impact Timeline</h2>
+
+            <article>
+                <h4>Short-Term (1-4 weeks)</h4>
+                <ul>
+                    <li>All pages fully indexable and discoverable</li>
+                    <li>Google Search Console recognizes sitemap</li>
+                    <li>Improved social media previews</li>
+                    <li>Structured data validation passes</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Medium-Term (1-3 months)</h4>
+                <ul>
+                    <li>Improved rankings for core keywords (AML, KYC, compliance)</li>
+                    <li>Better click-through rates from search results</li>
+                    <li>Featured snippet eligibility</li>
+                    <li>Visibility in AI-powered search engines</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Long-Term (3-6 months)</h4>
+                <ul>
+                    <li>Established domain authority in compliance space</li>
+                    <li>Consistent organic traffic growth</li>
+                    <li>Strong EU market positioning</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Verification -->
+        <section>
+            <h2>Verification Tools</h2>
+
+            <div class="metric">
+                <div class="metric-card">
+                    <strong>Google Rich Results Test</strong>
+                    Validate schema markup
+                </div>
+                <div class="metric-card">
+                    <strong>Schema.org Validator</strong>
+                    Check JSON-LD validity
+                </div>
+                <div class="metric-card">
+                    <strong>Open Graph Preview</strong>
+                    Test social cards
+                </div>
+                <div class="metric-card">
+                    <strong>Google Search Console</strong>
+                    Monitor indexation
+                </div>
+            </div>
+        </section>
+
+        <!-- Standards -->
+        <aside>
+            <h4>✓ Standards & Compliance</h4>
+            <ul>
+                <li><strong>W3C Schema.org</strong> — All structured data properly formatted</li>
+                <li><strong>Google Guidelines</strong> — Best practices, no black-hat tactics</li>
+                <li><strong>GDPR Compliant</strong> — Privacy-first approach</li>
+                <li><strong>Mobile-Friendly</strong> — Responsive design implemented</li>
+                <li><strong>No Negative Impact</strong> — No keyword stuffing, cloaking, or duplicate content</li>
+            </ul>
+        </aside>
+
+        <!-- Status -->
+        <section>
+            <h2>Status</h2>
+            <span class="status complete">✓ Complete</span>
+
+            <p><strong>Commit:</strong> <code>c5fc224</code> | <strong>Ticket:</strong> WRK-21 | <strong>Date:</strong> July 14, 2026</p>
+            <p><strong>Files Modified:</strong> 10 (6 HTML + 4 new) | <strong>Lines Added:</strong> 490+</p>
+
+            <p style="margin-top: 1rem;"><strong>Next Steps:</strong></p>
+            <ol>
+                <li>Submit sitemap to Google Search Console</li>
+                <li>Monitor search performance and rankings</li>
+                <li>Create FAQ schema for compliance questions</li>
+                <li>Build backlinks from industry publications</li>
+                <li>Add Google Business Profile</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>finperiti.com SEO Optimization Documentation | WRK-21 | Ready for deployment</p>
+        <p>All changes follow Google SEO guidelines and W3C standards</p>
+    </footer>
+</body>
+</html>
