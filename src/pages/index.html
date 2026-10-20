@@ -1,0 +1,681 @@
+<!--meta
+{
+  "path": "/",
+  "page": "home",
+  "title": "finperiti — AML &amp; KYC Compliance for Microsoft 365 Firms",
+  "ogTitle": "finperiti — AML &amp; KYC Compliance for Microsoft 365 Firms",
+  "description": "Automate AML, KYC and KYB onboarding, screening and client monitoring in one secure platform that works with the Microsoft 365 your firm already uses.",
+  "jsonld": "home"
+}
+-->
+{{> head}}
+<body>
+{{> header}}
+
+  <main id="main">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+{{> page-hero-bg}}
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--on-dark" data-reveal>Compliance. Simplified.</p>
+          <h1 class="hero__title hero__title--long" id="hero-title" data-reveal>
+            <span>Onboard clients in minutes, not weeks.</span>
+            <span>Stay compliant.</span>
+            <span class="text-gradient">Operate with confidence.</span>
+          </h1>
+          <p class="hero__lead" data-reveal>finperiti helps regulated firms automate AML, KYC and KYB onboarding, screen for risks and monitor clients, all in one secure platform that works with the Microsoft 365 you already use.</p>
+          <div class="hero__ctas" data-reveal>
+            <a class="btn btn--primary btn--lg" href="/contact">Get started</a>
+          </div>
+          <ul class="hero__benefits" data-reveal>
+            <li><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span>Onboard in minutes</li>
+            <li><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span>Reduce compliance risk</li>
+            <li><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span>Built for regulated businesses</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-reveal="zoom">
+          <!-- Illustrative product preview. Built in HTML/CSS; all figures are sample data. -->
+          <figure class="app-window" aria-label="Illustrative preview of the Finperiti onboarding dashboard, using sample data">
+            <div class="app-window__bar" aria-hidden="true">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <div class="app-window__search"><svg><use href="#i-search"/></svg><span>Search clients, companies or references…</span></div>
+              <span class="app-window__bell"><svg><use href="#i-bell"/></svg></span>
+              <span class="app-window__avatar">AN</span>
+            </div>
+            <div class="app-window__body">
+              <aside class="app-side" aria-hidden="true">
+                <ul>
+                  <li class="is-active"><svg><use href="#i-grid"/></svg>Dashboard</li>
+                  <li><svg><use href="#i-users"/></svg>Clients</li>
+                  <li><svg><use href="#i-route"/></svg>Onboarding</li>
+                  <li><svg><use href="#i-shield"/></svg>KYC &amp; KYB</li>
+                  <li><svg><use href="#i-search"/></svg>Screening</li>
+                  <li><svg><use href="#i-risk"/></svg>Risk analysis</li>
+                  <li><svg><use href="#i-eye"/></svg>Monitoring</li>
+                  <li><svg><use href="#i-chart"/></svg>Reports</li>
+                  <li><svg><use href="#i-doc"/></svg>Documents</li>
+                  <li><svg><use href="#i-cog"/></svg>Settings</li>
+                </ul>
+              </aside>
+
+              <div class="app-main">
+                <div class="app-main__head">
+                  <div>
+                    <p class="app-main__title">Onboarding overview</p>
+                    <p class="app-main__sub">Sample data &middot; illustrative preview</p>
+                  </div>
+                  <span class="app-chip" aria-hidden="true">Last 30 days</span>
+                </div>
+
+                <div class="kpis">
+                  <div class="kpi">
+                    <span class="kpi__icon kpi__icon--teal" aria-hidden="true"><svg><use href="#i-users"/></svg></span>
+                    <div><p class="kpi__value">142</p><p class="kpi__label">Clients onboarded</p></div>
+                  </div>
+                  <div class="kpi">
+                    <span class="kpi__icon kpi__icon--amber" aria-hidden="true"><svg><use href="#i-clock"/></svg></span>
+                    <div><p class="kpi__value">18</p><p class="kpi__label">Pending review</p></div>
+                  </div>
+                  <div class="kpi">
+                    <span class="kpi__icon kpi__icon--red" aria-hidden="true"><svg><use href="#i-risk"/></svg></span>
+                    <div><p class="kpi__value">3</p><p class="kpi__label">High risk cases</p></div>
+                  </div>
+                  <div class="kpi">
+                    <span class="kpi__icon kpi__icon--green" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+                    <div><p class="kpi__value">128</p><p class="kpi__label">Low risk cases</p></div>
+                  </div>
+                </div>
+
+                <div class="app-card app-table-card">
+                  <div class="app-card__head"><p>Recent onboarding activity</p><span aria-hidden="true">View all</span></div>
+                  <table class="app-table">
+                    <caption class="sr-only">Sample onboarding activity (demonstration data)</caption>
+                    <thead><tr><th scope="col">Client</th><th scope="col">Type</th><th scope="col">Status</th><th scope="col">Risk</th><th scope="col" class="col-time">Updated</th></tr></thead>
+                    <tbody>
+                      <tr><td><span class="avatar avatar--a" aria-hidden="true">NH</span>Northwind Holdings</td><td>Company</td><td><span class="badge badge--ok">Approved</span></td><td><span class="risk risk--low">Low</span></td><td class="col-time">2h ago</td></tr>
+                      <tr><td><span class="avatar avatar--b" aria-hidden="true">AF</span>Alder &amp; Finch LLP</td><td>Company</td><td><span class="badge badge--info">In review</span></td><td><span class="risk risk--med">Medium</span></td><td class="col-time">4h ago</td></tr>
+                      <tr><td><span class="avatar avatar--c" aria-hidden="true">MK</span>M. Kowalczyk</td><td>Individual</td><td><span class="badge badge--warn">In progress</span></td><td><span class="risk risk--low">Low</span></td><td class="col-time">1d ago</td></tr>
+                      <tr><td><span class="avatar avatar--d" aria-hidden="true">MT</span>Meridian Trade GmbH</td><td>Company</td><td><span class="badge badge--todo">To do</span></td><td><span class="risk risk--high">High</span></td><td class="col-time">2d ago</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="app-row">
+                  <div class="app-card">
+                    <div class="app-card__head"><p>Verification progress</p></div>
+                    <div class="donut-wrap">
+                      <svg class="donut" viewBox="0 0 120 120" aria-hidden="true">
+                        <circle cx="60" cy="60" r="48" class="donut__track"/>
+                        <circle cx="60" cy="60" r="48" class="donut__value" pathLength="100" style="--v:78"/>
+                      </svg>
+                      <span class="donut__label"><strong>78%</strong><small>complete</small></span>
+                      <ul class="legend">
+                        <li><i style="--c:var(--fp-dot-2)"></i>Identity checks<b>82%</b></li>
+                        <li><i style="--c:var(--fp-turquoise)"></i>Company checks<b>74%</b></li>
+                        <li><i style="--c:var(--fp-warn)"></i>Sanctions &amp; PEP<b>69%</b></li>
+                        <li><i style="--c:var(--fp-violet)"></i>Adverse media<b>64%</b></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="app-card">
+                    <div class="app-card__head"><p>Risk distribution</p></div>
+                    <div class="bars" aria-hidden="true">
+                      <div class="bar" style="--h:84%; --c:var(--fp-ok)"><span>62%</span><i></i><em>Low</em></div>
+                      <div class="bar" style="--h:40%; --c:var(--fp-dot-2)"><span>28%</span><i></i><em>Medium</em></div>
+                      <div class="bar" style="--h:18%; --c:var(--fp-risk)"><span>10%</span><i></i><em>High</em></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <!-- Hidden for now:
+          <div class="float-card float-card--a" aria-hidden="true">
+            <span class="float-card__icon"><svg><use href="#i-spark"/></svg></span>
+            <div><p>AI review &middot; advisory</p><small>Analyst confirms or overrides</small></div>
+          </div>
+          -->
+          <div class="float-card float-card--b" aria-hidden="true">
+            <span class="float-card__icon float-card__icon--ok"><svg><use href="#i-check"/></svg></span>
+            <div><p>Sanctions &amp; PEP clear</p><small>Monitoring active</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Benefits strip ===================== -->
+    <section class="value-strip" aria-label="Key benefits">
+      <div class="container">
+        <ul class="value-strip__list">
+          <li data-reveal>
+            <span class="value-strip__icon" aria-hidden="true"><svg><use href="#i-clock"/></svg></span>
+            <div><h2 class="value-strip__title">Onboard in minutes</h2><p>Guided flows and automated checks replace weeks of email back-and-forth.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="value-strip__icon" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+            <div><h2 class="value-strip__title">Reduce compliance risk</h2><p>Consistent checks and an append-only trail behind every decision.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="value-strip__icon" aria-hidden="true"><svg><use href="#i-building"/></svg></span>
+            <div><h2 class="value-strip__title">Built for regulated firms</h2><p>Designed around UK AML rules and the EU rules arriving in July 2027.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="value-strip__icon" aria-hidden="true"><svg><use href="#i-scale"/></svg></span>
+            <div><h2 class="value-strip__title">Grow without switching</h2><p>Unlimited clients and users on every plan, with Groups pricing as you add entities.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Trust bar ===================== -->
+    <!-- <section class="trust-bar" aria-label="Backing and partners">
+      <div class="container">
+        <ul class="trust-bar__list">
+          <li><svg aria-hidden="true"><use href="#i-shield"/></svg>Enterprise Ireland Backed</li>
+          <li><svg aria-hidden="true"><use href="#i-file-check"/></svg>Microsoft ISV Success Member</li>
+          <li><span>KYC by</span><img src="/assets/img/partners/veriff.svg" alt="Veriff" width="79" height="18" /></li>
+          <li><span>Document Integrity by</span><img src="/assets/img/partners/binarii.svg" alt="Binarii Labs" width="87" height="22" /></li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- ===================== The problem ===================== -->
+    <section class="section section--tinted features" id="the-problem" aria-labelledby="problem-title">
+      <div class="deco-dots deco-dots--tl" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="deadline-pill"><svg aria-hidden="true"><use href="#i-alert"/></svg>EU AML rules apply from July 2027</p>
+          <h2 class="section-title" id="problem-title">Compliance designed for SMEs</h2>
+          <p class="section-lead">Accountants, legal advisers, wealth managers and other regulated firms must run client onboarding they can defend to a supervisor. Most still do it with email and spreadsheets.</p>
+        </header>
+        <div class="card-grid card-grid--3">
+          <article class="feature-card stat-card" data-reveal style="--accent:var(--fp-petrol); --accent-bg:var(--fp-tint)">
+            <p class="stat-card__stat">100% Audit Trail</p>
+            <h3 class="feature-card__title">Every activity logged as you work</h3>
+            <p>Email and Excel leave gaps you can&rsquo;t defend. finperiti records every action, time-stamped as it happens, with full reports you can export at any time.</p>
+          </article>
+          <article class="feature-card stat-card" data-reveal style="--accent:var(--fp-jewel); --accent-bg:#e1f5f2">
+            <p class="stat-card__stat">100% Visibility</p>
+            <h3 class="feature-card__title">The rules are changing</h3>
+            <p><span class="stack">Every client.</span><span class="stack">Every document.</span><span class="stack">Every decision.</span>No more chasing files across shared folders.</p>
+          </article>
+          <article class="feature-card stat-card" data-reveal style="--accent:var(--fp-risk); --accent-bg:var(--fp-risk-bg)">
+            <p class="stat-card__stat">&euro;1M+ Risk</p>
+            <h3 class="feature-card__title">One missed check can cost more than a decade of finperiti</h3>
+            <p>A 10-person accountancy practice onboards a client without a proper beneficial-owner check. Under the EU rules coming in July 2027, non-financial firms such as accountants, car dealerships, tax advisers and estate agents face fines of up to &euro;1M or more. Financial institutions such as banks face up to &euro;10M. finperiti costs from &euro;{{priceAmlEssentials}} a month.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Why now ===================== -->
+    <section class="section why-now" id="why-now" aria-labelledby="whynow-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Why now</p>
+          <h2 class="section-title" id="whynow-title">Enforcement has reached small firms</h2>
+          <p class="section-lead">AML rules aren&rsquo;t new. What&rsquo;s changing is how firmly they&rsquo;re enforced, and how little room is left for spreadsheets and email.</p>
+        </header>
+        <ol class="wn-timeline">
+          <li class="wn-step" data-reveal>
+            <p class="wn-step__when">Today &middot; UK</p>
+            <h3 class="wn-step__title">The rules already apply</h3>
+            <p>The Money Laundering Regulations 2017 already require a documented, risk-based approach to client due diligence, with records you can show a supervisor.</p>
+          </li>
+          <li class="wn-step" data-reveal>
+            <p class="wn-step__when">July 2027 &middot; EU</p>
+            <h3 class="wn-step__title">One rulebook, directly applicable</h3>
+            <p>The EU AML Regulation (2024/1624) applies directly in every member state. One standard, far less national discretion.</p>
+          </li>
+          <li class="wn-step" data-reveal>
+            <p class="wn-step__when">AMLA &middot; EU-wide</p>
+            <h3 class="wn-step__title">Supervision gets coordinated</h3>
+            <p>The new EU Anti-Money Laundering Authority coordinates national supervisors, so expectations become consistent across borders.</p>
+          </li>
+        </ol>
+        <div class="wn-stats">
+          <div class="wn-stat" data-reveal>
+            <p class="wn-stat__num">914</p>
+            <p>AML penalties issued by Malta&rsquo;s FIAU since 2019, totalling more than &euro;29.5m in fines.</p>
+          </div>
+          <div class="wn-stat" data-reveal>
+            <p class="wn-stat__num">+177%</p>
+            <p>Rise in HMRC AML fines in the UK, with 1,860 fines issued from 2021/22 to 2024/25.</p>
+          </div>
+          <div class="wn-stat" data-reveal>
+            <p class="wn-stat__num"><span class="wn-stat__from">From</span>&euro;{{priceAmlEssentialsYear}}</p>
+            <p>A year for finperiti AML Essentials, per entity, with unlimited clients and users. Manual onboarding can take two to three staff days per client.</p>
+          </div>
+        </div>
+        <p class="wn-sources" data-reveal>Sources: FIAU (Malta) enforcement data, 2019&ndash;2024; HMRC AML penalty data, 2021/22&ndash;2024/25; Regulation (EU) 2024/1624. Price excludes VAT.</p>
+      </div>
+    </section>
+
+    <!-- ===================== Features + risk methodology ===================== -->
+    <section class="section section--tinted features" id="solution" aria-labelledby="solution-title">
+      <div class="deco-dots deco-dots--tl" aria-hidden="true"></div>
+      <div class="deco-dots deco-dots--br" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Built for modern <span class="eyebrow__accent">compliance teams</span></p>
+          <h2 class="section-title" id="solution-title">Everything you need for compliant client onboarding</h2>
+          <p class="section-lead">Powerful tools, seamless workflows and reliable compliance processes, all in one platform.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal style="--accent:var(--fp-dot-2); --accent-bg:#e1f5f2">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-doc"/></svg></span>
+            <h3 class="feature-card__title">Smart document capture</h3>
+            <p>Required documents are derived from each client&rsquo;s country and risk profile, then collected through a secure portal and extracted automatically.</p>
+            <ul class="feature-card__points">
+              <li>Country &amp; risk-based requirements</li>
+              <li>AI document extraction</li>
+            </ul>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:#0b8fa3; --accent-bg:#def4f6">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+            <h3 class="feature-card__title">KYC &amp; KYB checks</h3>
+            <p>Verify individuals and businesses, including company registry search, ownership and control, against a fixed, versioned KYC/KYB rubric.</p>
+            <ul class="feature-card__points">
+              <li>Individuals and legal entities</li>
+              <li>Company registry search</li>
+            </ul>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:#c94f58; --accent-bg:#fdeaeb">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <h3 class="feature-card__title">Screening &amp; monitoring</h3>
+            <p>Clients and beneficial owners are checked against sanctions, PEP and adverse-media lists, with ongoing monitoring as lists change.</p>
+            <ul class="feature-card__points">
+              <li>Sanctions, PEP &amp; adverse media</li>
+              <li>Ongoing list monitoring</li>
+            </ul>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:var(--fp-violet); --accent-bg:var(--fp-violet-bg)">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-spark"/></svg></span>
+            <h3 class="feature-card__title">AI-assisted risk review</h3>
+            <p>An advisory risk score speeds up every case. The analyst confirms or overrides it, stays accountable, and every step is recorded.</p>
+            <ul class="feature-card__points">
+              <li>Advisory score, human decision</li>
+              <li>Every step on the record</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="method-panel" data-reveal>
+          <div class="method-panel__intro">
+            <p class="eyebrow">Transparent by design</p>
+            <h3 class="method-panel__title">Risk scoring you can explain to a regulator</h3>
+            <p>Each case is rated across four areas. Scores from 0 to 100 map to fixed bands, and safeguards stop an average from hiding something serious.</p>
+            <a class="link-arrow" href="/contact">Ask us about the methodology <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="method-panel__factors">
+            <p class="method-panel__label" id="factor-label">What a case rating looks at</p>
+            <ul class="factor-list factor-list--tags" aria-labelledby="factor-label">
+              <li><span>Jurisdiction</span><b class="factor-tag factor-tag--greater">Greater</b></li>
+              <li><span>Customer</span><b class="factor-tag factor-tag--greater">Greater</b></li>
+              <li><span>Money</span><b class="factor-tag">Supporting</b></li>
+              <li><span>Product</span><b class="factor-tag">Supporting</b></li>
+            </ul>
+          </div>
+          <div class="method-panel__bands">
+            <p class="method-panel__label">Risk bands</p>
+            <div class="band-scale" role="img" aria-label="Low, Medium, High">
+              <span class="band band--low" style="--w:31">Low</span>
+              <span class="band band--med" style="--w:40">Medium</span>
+              <span class="band band--high" style="--w:30">High</span>
+            </div>
+            <ul class="rule-list">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>A confirmed sanctions, PEP or serious adverse-media match makes a case High</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Unsure documents always go to a person</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cta-row" data-reveal>
+          <a class="btn btn--outline btn--lg" href="/aml">Explore finperiti AML</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== How it works ===================== -->
+    <section class="section how" id="how-it-works" aria-labelledby="how-title">
+      <div class="container how__grid">
+        <div class="how__intro" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2 class="section-title" id="how-title">From application to approval, in four simple steps</h2>
+          <p class="section-lead">A streamlined process that removes repetitive manual tasks, so your team spends its time on judgement, not chasing documents.</p>
+          <a class="btn btn--primary" href="/contact">Book a Demo</a>
+        </div>
+        <ol class="timeline" data-timeline>
+          <li class="timeline__step" data-reveal>
+            <span class="timeline__num" aria-hidden="true">01</span>
+            <span class="timeline__icon" aria-hidden="true"><svg><use href="#i-file-check"/></svg></span>
+            <div>
+              <h3 class="timeline__title"><span class="sr-only">Step 1: </span>Capture client information</h3>
+              <p>Collect relevant client information through guided onboarding and secure document submission.</p>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal>
+            <span class="timeline__num" aria-hidden="true">02</span>
+            <span class="timeline__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <div>
+              <h3 class="timeline__title"><span class="sr-only">Step 2: </span>Run compliance checks</h3>
+              <p>Perform KYC, KYB, sanctions, PEP and adverse-media screening, manually or automated depending on your plan.</p>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal>
+            <span class="timeline__num" aria-hidden="true">03</span>
+            <span class="timeline__icon" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+            <div>
+              <h3 class="timeline__title"><span class="sr-only">Step 3: </span>Review risk and make a decision</h3>
+              <p>AI-assisted insights inform the case; a human analyst confirms or overrides and is accountable for the outcome.</p>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal>
+            <span class="timeline__num" aria-hidden="true">04</span>
+            <span class="timeline__icon" aria-hidden="true"><svg><use href="#i-refresh"/></svg></span>
+            <div>
+              <h3 class="timeline__title"><span class="sr-only">Step 4: </span>Maintain ongoing monitoring</h3>
+              <p>Track list changes over time and keep every review action recorded in the audit trail.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== Trust & security ===================== -->
+    <section class="security-wrap" id="security" aria-labelledby="security-title">
+      <div class="container">
+        <div class="security">
+          <div class="security__globe" aria-hidden="true"><canvas data-globe></canvas></div>
+          <div class="security__copy" data-reveal>
+            <p class="eyebrow eyebrow--on-dark">Trust &amp; security</p>
+            <h2 class="section-title section-title--on-dark" id="security-title">Your data. Protected. Always.</h2>
+            <p class="section-lead section-lead--on-dark">Keep a tamper-evident record of every decision, choose where your documents are kept, and reproduce any assessment exactly as it was made.</p>
+            <a class="btn btn--ghost-light" href="/contact">Ask us about security</a>
+          </div>
+          <ul class="security__items">
+            <li data-reveal>
+              <span class="security__icon" aria-hidden="true"><svg><use href="#i-file-check"/></svg></span>
+              <div><h3>Audit-ready records</h3><p>An append-only, hash-chained trail captures who decided what, when and why.</p></div>
+            </li>
+            <li data-reveal>
+              <span class="security__icon" aria-hidden="true"><svg><use href="#i-globe"/></svg></span>
+              <div><h3>Data where you need it</h3><p>Essentials is hosted and managed by finperiti. On Professional, your document vault sits in your own Microsoft 365 tenant.</p></div>
+            </li>
+            <li data-reveal>
+              <span class="security__icon" aria-hidden="true"><svg><use href="#i-key"/></svg></span>
+              <div><h3>Controlled access</h3><p>Role-based access for your staff, with every review action recorded.</p></div>
+            </li>
+            <li data-reveal>
+              <span class="security__icon" aria-hidden="true"><svg><use href="#i-route"/></svg></span>
+              <div><h3>Traceable decisions</h3><p>AI scores are advisory; an analyst confirms or overrides each one, on the record.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Testimonial 1 ===================== -->
+    <section class="quote-wrap" aria-label="Customer testimonial">
+      <div class="container">
+        <figure class="quote-card" data-reveal>
+          <svg class="quote-card__mark" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote class="quote-card__text"><p>We retired a &euro;6K competitor because we still had to classify risk by hand. Finperiti solved that instantly.</p></blockquote>
+          <figcaption class="quote-card__attr">Design Partner &middot; UK</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== finperiti IQ ===================== -->
+    <!-- <section class="dark-band iq-band" id="iq" aria-labelledby="iq-title">
+      <div class="dark-band__bg" aria-hidden="true" data-dot-field data-density="0.6"></div>
+      <div class="container iq-band__grid">
+        <div class="iq-band__copy" data-reveal>
+          <p class="eyebrow eyebrow--on-dark">Same engine, second product</p>
+          <div class="tag-row">
+            <span class="tag tag--solid">finperiti IQ</span>
+            <span class="tag tag--outline">AIFMD Annex IV reporting</span>
+          </div>
+          <h2 class="section-title section-title--on-dark" id="iq-title">Fund filings checked before the regulator sees them</h2>
+          <p class="section-lead section-lead--on-dark">finperiti IQ validates AIFMD Annex IV reports against the source data itself, so it can check a filing whoever prepared it, not just filings built on one template. For fund managers, ManCos and fund administrators.</p>
+          <p class="launch-note"><span class="launch-note__dot" aria-hidden="true"></span>Launching January 2027 &middot; from &euro;{{priceIqIntegrity}} per fund report</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="/iq">Explore finperiti IQ</a>
+            <a class="btn btn--ghost-light" href="/iq#plans">See IQ pricing</a>
+          </div>
+        </div>
+        <ul class="security__items">
+          <li data-reveal>
+            <span class="security__icon" aria-hidden="true"><svg><use href="#i-grid"/></svg></span>
+            <div><h3>Works from any source data</h3><p>Checks the filing against the underlying data, whichever system or vendor produced it.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="security__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <div><h3>Catches what standard checks miss</h3><p>Finds errors that pass format validation, before the report goes to the regulator.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="security__icon" aria-hidden="true"><svg><use href="#i-chart"/></svg></span>
+            <div><h3>Period-on-period comparison</h3><p>Compares each filing with the last one to flag movements nobody has explained.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="security__icon" aria-hidden="true"><svg><use href="#i-clock"/></svg></span>
+            <div><h3>SEC Form PF next</h3><p>Checks for SEC Form PF filings are coming in 2027. Pricing at launch.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- ===================== Why us ===================== -->
+    <section class="section features" id="why-us" aria-labelledby="why-title">
+      <div class="deco-dots deco-dots--br" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Why SMEs Trust finperiti</p>
+          <h2 class="section-title section-title--wide" id="why-title">Distinctive advantages that differentiate finperiti</h2>
+          <p class="section-lead">finperiti is the first AML onboarding platform designed specifically for SMEs, working with the Microsoft 365 your firm already uses. No IT project, no extra training&mdash;just seamless, audit-ready compliance where you already work.</p>
+        </header>
+        <div class="card-grid card-grid--3">
+          <article class="feature-card" data-reveal style="--accent:var(--fp-petrol); --accent-bg:var(--fp-tint)">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-grid"/></svg></span>
+            <h3 class="feature-card__title">Works with Microsoft 365</h3>
+            <p>Sign in with the Microsoft 365 your firm already uses &mdash; no new logins and no IT setup, keeping your existing workflows intact.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:var(--fp-violet); --accent-bg:var(--fp-violet-bg)">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-spark"/></svg></span>
+            <h3 class="feature-card__title">AI-Assisted Risk Rating</h3>
+            <p>AI trained for SME onboarding drafts risk ratings and flags issues for your compliance team to review. Agentic workflows follow in 2027.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:#0b8fa3; --accent-bg:#def4f6">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-sliders"/></svg></span>
+            <h3 class="feature-card__title">Complete Workflow Control</h3>
+            <p>Manages the entire onboarding process from client intake to audit readiness, providing full ownership over compliance.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:var(--fp-dot-2); --accent-bg:#e1f5f2">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-euro"/></svg></span>
+            <h3 class="feature-card__title">Affordable</h3>
+            <p>Modular pricing designed for SMEs, costing 70&ndash;90% less than enterprise compliance platforms.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:#c94f58; --accent-bg:#fdeaeb">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-lock"/></svg></span>
+            <h3 class="feature-card__title">Secure Data, Your Choice of Home</h3>
+            <p>Encrypted, tamper-evident storage. On the Professional plan, your vault resides within your own Microsoft 365 tenant, using secure split-cloud storage technology.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:var(--fp-warn); --accent-bg:var(--fp-warn-bg)">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-bolt"/></svg></span>
+            <h3 class="feature-card__title">Instant ROI</h3>
+            <p>Automates up to 80% of manual tasks, reducing risk and simplifying audits for immediate efficiency gains.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== News & milestones ===================== -->
+    <section class="dark-band news" id="news" aria-labelledby="news-title">
+      <div class="dark-band__bg" aria-hidden="true" data-dot-field data-density="0.5"></div>
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow eyebrow--on-dark">News &amp; milestones</p>
+          <h2 class="section-title section-title--on-dark" id="news-title">From Enterprise Ireland backing to launch</h2>
+        </header>
+        <ol class="ms-grid">
+          <li class="ms-card" data-reveal>
+            <p class="ms-card__date">September 2025</p>
+            <h3 class="ms-card__title">Selected for Enterprise Ireland&rsquo;s New Frontiers</h3>
+            <p>Our CEO, Fiona Finucane, was one of eleven founders from Dublin and the north-east chosen for phase two of the programme.</p>
+            <p class="ms-card__source">Featured in Northside People West</p>
+          </li>
+          <li class="ms-card" data-reveal>
+            <p class="ms-card__date">2026</p>
+            <h3 class="ms-card__title">Partnerships signed</h3>
+            <p>AStrategic partnerships established with leading technology and identity verification providers, alongside Finperiti joining Microsoft’s ISV Success programme.</p>
+          </li>
+          <li class="ms-card" data-reveal>
+            <p class="ms-card__date">28 October 2026</p>
+            <h3 class="ms-card__title">Launch event in Malta</h3>
+            <p>We&rsquo;re introducing finperiti to firms in Malta at an invitation-only launch event.</p>
+            <a class="ms-card__link" href="/contact" data-expires="2026-10-29">Request an invitation <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="ms-card" data-reveal>
+            <p class="ms-card__date">November 2026</p>
+            <h3 class="ms-card__title">Heading to Web Summit, Lisbon</h3>
+            <p>Enterprise Ireland selected finperiti as one of 24 high-potential start-ups in its Web Summit delegation, 9&ndash;12 November.</p>
+          </li>
+          <li class="ms-card ms-card--next" data-reveal>
+            <p class="ms-card__date">January 2027</p>
+            <h3 class="ms-card__title">finperiti AML and IQ launch</h3>
+            <p>Both products go live. Register now to be among the first firms on the platform.</p>
+            <a class="ms-card__link" href="/contact">Register your interest <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== Testimonial 2 ===================== -->
+    <section class="quote-wrap" aria-label="Customer testimonial">
+      <div class="container">
+        <figure class="quote-card quote-card--petrol" data-reveal>
+          <svg class="quote-card__mark" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote class="quote-card__text"><p>Finperiti is the first platform that addresses our real world workflows.</p></blockquote>
+          <figcaption class="quote-card__attr">Design Partner &middot; Malta</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== Pricing ===================== -->
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Sign-up Plan &amp; Pricing</p>
+          <h2 class="section-title" id="pricing-title">Simple, transparent pricing designed for SMEs</h2>
+          <p class="section-lead">No set-up fee, no per-seat fees, no lock-in.</p>
+        </header>
+        <article class="price-card price-card--featured price-card--single" data-reveal aria-labelledby="plan-essentials">
+          <span class="price-card__flag" id="plan-essentials">finperiti AML &middot; Essentials</span>
+          <p class="price-card__price">
+            <span class="amount">&euro;{{priceAmlEssentials}}</span><span class="per">/entity/month</span>
+          </p>
+          <p class="price-card__desc">No set-up fee. The full finperiti AML platform, hosted by us, with unlimited clients and users. Professional (&euro;{{priceAmlProfessional}}) keeps your vault in your own Microsoft 365 tenant.</p>
+          <ul class="check-list check-list--2col check-list--ruled">
+            <li>AML client onboarding</li>
+            <li>KYC verification workflows</li>
+            <li>Automated risk ratings</li>
+            <li>Audit trails &amp; reporting</li>
+            <li>Microsoft 365 integration</li>
+          </ul>
+          <div class="price-card__actions">
+            <a class="btn btn--primary btn--block" href="/contact">Get Started Today</a>
+            <a class="btn btn--outline btn--block" href="/aml#plans">See our other AML packages</a>
+          </div>
+          <!-- <div class="partners">
+            <span class="partners__label">Powered by</span>
+            <img src="/assets/img/partners/veriff.svg" alt="Veriff" width="79" height="18" loading="lazy" />
+            <img src="/assets/img/partners/binarii.svg" alt="Binarii Labs" width="87" height="22" loading="lazy" />
+          </div> -->
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== Team ===================== -->
+    <section class="section section--tinted" id="about" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Our Team</p>
+          <h2 class="section-title" id="team-title">The people behind our success</h2>
+        </header>
+        <div class="card-grid card-grid--3">
+          <article class="team-card" data-reveal>
+            <div class="team-card__head">
+              <img class="team-card__photo" src="/assets/img/team/fiona.avif" alt="Fiona Finucane" width="64" height="64" loading="lazy" />
+              <div><h3 class="team-card__name">Fiona Finucane</h3><p class="team-card__role">CEO &amp; Co-Founder</p></div>
+            </div>
+            <p class="team-card__bio">Visionary leader with 20+ years in fund services and compliance tech, leading product and regulatory strategy.</p>
+            <a class="link-arrow" href="/about#fiona">Learn more <span class="sr-only">about Fiona Finucane</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="team-card__head">
+              <img class="team-card__photo" src="/assets/img/team/richard.avif" alt="Richard Metcalfe" width="64" height="64" loading="lazy" />
+              <div><h3 class="team-card__name">Richard Metcalfe</h3><p class="team-card__role">CGO &amp; Co-Founder</p></div>
+            </div>
+            <p class="team-card__bio">Growth expert with 20+ years scaling B2B SaaS ventures and driving commercial success.</p>
+            <a class="link-arrow" href="/about#richard">Learn more <span class="sr-only">about Richard Metcalfe</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="team-card__head">
+              <img class="team-card__photo" src="/assets/img/team/gordon.avif" alt="Gordon Rudman" width="64" height="64" loading="lazy" />
+              <div><h3 class="team-card__name">Gordon Rudman</h3><p class="team-card__role">CPTO &amp; Co-Founder</p></div>
+            </div>
+            <p class="team-card__bio">Technology leader with 25+ years in product development, software engineering, enterprise architecture, and building secure, scalable platforms.</p>
+            <a class="link-arrow" href="/about#gordon">Learn more <span class="sr-only">about Gordon Rudman</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="team-card__head">
+              <img class="team-card__photo" src="/assets/img/team/rachel.avif" alt="Rachel Martin" width="64" height="64" loading="lazy" />
+              <div><h3 class="team-card__name">Rachel Martin</h3><p class="team-card__role">Regulatory &amp; Compliance Expert</p></div>
+            </div>
+            <p class="team-card__bio">AML and compliance specialist guiding regulatory strategy and risk frameworks.</p>
+            <a class="link-arrow" href="/about#rachel">Learn more <span class="sr-only">about Rachel Martin</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="team-card__head">
+              <img class="team-card__photo" src="/assets/img/team/james.avif" alt="James Robinson" width="64" height="64" loading="lazy" />
+              <div><h3 class="team-card__name">James Robinson</h3><p class="team-card__role">CFO Advisor</p></div>
+            </div>
+            <p class="team-card__bio">Finance leader with 20+ years experience advising on forecasting, strategy, and growth.</p>
+            <a class="link-arrow" href="/about#james">Learn more <span class="sr-only">about James Robinson</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="team-card__head">
+              <img class="team-card__photo" src="/assets/img/team/paul.avif" alt="Paul Mason" width="64" height="64" loading="lazy" />
+              <div><h3 class="team-card__name">Paul Mason</h3><p class="team-card__role">Strategic Advisor</p></div>
+            </div>
+            <p class="team-card__bio">Industry veteran with 25+ years of global leadership, driving AI strategy and partnerships.</p>
+            <a class="link-arrow" href="/about#paul">Learn more <span class="sr-only">about Paul Mason</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Final CTA ===================== -->
+    <section class="final-cta" id="waitlist" aria-labelledby="cta-heading">
+      <div class="final-cta__bg" aria-hidden="true" data-dot-field data-density="0.6"></div>
+      <div class="container">
+        <div class="final-cta__inner">
+          <div data-reveal>
+            <p class="eyebrow eyebrow--on-dark">Get started</p>
+            <h2 class="section-title section-title--on-dark" id="cta-heading">Ready to see it in your environment?</h2>
+            <p class="section-lead section-lead--on-dark">Book a 30-minute demo and we&rsquo;ll walk you through onboarding a client, live, from start to finish.</p>
+          </div>
+          <div class="final-cta__actions" data-reveal>
+            <a class="btn btn--primary btn--lg" href="/contact">Book a Demo</a>
+            <!-- <a class="btn btn--ghost-light btn--lg" href="/contact">Talk to the team</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+{{> footer-home}}
+</body>
+</html>

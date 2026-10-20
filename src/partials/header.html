@@ -1,0 +1,45 @@
+  <a class="skip-link" href="#main">Skip to content</a>
+{{> sprite}}
+  <header class="site-nav" data-nav>
+    <div class="container site-nav__inner">
+      <a class="brand" href="/" aria-label="finperiti home">
+        <span class="brand__logo"><img src="/assets/img/brand/finperiti-logo-white.png" alt="finperiti" width="301" height="150" /></span>
+      </a>
+
+      <nav class="site-nav__links" aria-label="Main navigation">
+        <ul>
+          <li><a data-nav-key="home" href="/">Home</a></li>
+          <li><a data-nav-key="aml" href="/aml">Finperiti AML</a></li>
+          <li><a data-nav-key="iq" href="/iq">Finperiti IQ</a></li>
+          <li><a data-nav-key="about" href="/about">About Us</a></li>
+          <!-- <li><a data-nav-key="news" href="/#news">News</a></li> -->
+          <li><a data-nav-key="contact" href="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-nav__actions">
+        <a class="btn btn--primary btn--sm" href="/contact">Book a Demo</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+          <span class="sr-only">Open menu</span>
+          <svg class="nav-toggle__open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="nav-toggle__close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden data-mobile-menu>
+      <nav aria-label="Mobile navigation">
+        <ul>
+          <li><a data-nav-key="home" href="/">Home</a></li>
+          <li><a data-nav-key="aml" href="/aml">finperiti AML</a></li>
+          <li><a data-nav-key="iq" href="/iq">finperiti IQ</a></li>
+          <li><a data-nav-key="about" href="/about">About Us</a></li>
+          <li><a data-nav-key="news" href="/#news">News</a></li>
+          <li><a data-nav-key="contact" href="/contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu__ctas">
+          <a class="btn btn--primary" href="/contact">Book a Demo</a>
+        </div>
+      </nav>
+    </div>
+  </header>

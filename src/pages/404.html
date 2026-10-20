@@ -1,0 +1,33 @@
+<!--meta
+{
+  "path": "/404",
+  "page": "404",
+  "robots": "noindex",
+  "title": "Page Not Found | finperiti",
+  "ogTitle": "Page Not Found | finperiti",
+  "description": "The page you're looking for doesn't exist. Return to finperiti's homepage to learn about our AML and KYC compliance solutions."
+}
+-->
+{{> head}}
+<body>
+{{> header}}
+
+  <main id="main">
+    <section class="hero page-hero error-hero" aria-labelledby="error-title">
+{{> page-hero-bg}}
+      <div class="container">
+        <div class="error-hero__inner">
+          <p class="error-hero__code" data-reveal>404</p>
+          <h1 class="page-hero__title" id="error-title" data-reveal>Page Not Found</h1>
+          <p class="page-hero__lead" data-reveal>The page you're looking for doesn't exist. It may have been moved or removed. Try returning to our homepage or navigating using the menu above.</p>
+          <div class="hero__ctas" data-reveal>
+            <a class="btn btn--primary btn--lg" href="/">Return to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+{{> footer}}
+</body>
+</html>

@@ -1,73 +1,176 @@
-# finperiti.com — Marketing Site
+# finperiti.com, redesign
 
-Static marketing site for finperiti. No build step, no dependencies, no
-server-side code — plain HTML pages sharing one stylesheet and self-hosted
-assets. Deployed to **GitHub Pages** at `www.finperiti.com`.
+This is a complete rebuild of the official website **https://www.finperiti.com/**. The content (texts, pages, links, form, metadata and images) comes from the live site. The visual identity comes from the **Finperiti.Web.V2** reference project: tokens, typography, header, buttons, cards, sections, motion and logo.
 
----
+- **Stack:** static HTML, CSS and vanilla JavaScript. It has **zero runtime dependencies**, which is the same architecture as V2 and as the current live site (static files on GitHub Pages).
+- **Build:** one Node script with no npm packages. It assembles the pages from shared partials (header, footer, CTA, icon sprite), bundles and minifies the CSS into one file, gives CSS/JS content-hashed names (so they can be cached forever) and writes `dist/`.
+- **Output:** 8 pages plus a 404 page (home, finperiti AML, finperiti IQ, about, pricing, contact, privacy, terms). Total size is about 0.7 MB, most of it fonts and team photos.
 
-## Contents
+## Quick start
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Home page (hero, problem, solution, how-it-works, why-us, press, pricing, team, CTA) |
-| `about.html` | About Us — story + full team bios |
-| `pricing.html` | Pricing — Core Platform, modular add-ons, firm configurations |
-| `contact.html` | Contact — enquiry form (currently emails `team@finperiti.com`) |
-| `privacy-policy.html` | Privacy Policy |
-| `terms-and-conditions.html` | Terms & Conditions |
-| `css/site.css` | Single shared stylesheet for every page (base + per-page sections + responsive) |
-| `fonts/` | Self-hosted Manrope (variable) + JetBrains Mono woff2, preloaded from each page |
-| `images/` | Optimized assets — see image policy below |
-| `CNAME` | Custom domain for GitHub Pages (`www.finperiti.com`) |
-| `.nojekyll` | Tells GitHub Pages to skip the Jekyll build and serve files as-is |
-| `.github/workflows/static.yml` | CI/CD — deploys to GitHub Pages on every push to `main` |
+Requirements: **Node.js 18.17 or later**. Nothing needs installing to build or run the site.
 
-## Image policy
+```bash
+npm run build       # → dist/  (static site, ready to upload)
+npm run dev         # build + serve on http://localhost:5174 (clean URLs, 404 page, production CSP);
+                    # rebuilds and reloads the browser whenever src/ or site.config.json changes
+npm run preview     # serve an existing dist/ without rebuilding
+```
 
-- **Vector-first:** UI icons and logos are optimized SVGs (run through SVGO).
-- **AVIF for everything raster:** photos, screenshots, and raster-heavy art are
-  AVIF (all modern browsers support it). Team photos are sized 2× their largest
-  display size.
-- `images/hero-illustration.avif` (43 KB) is what the homepage loads; clicking
-  the hero opens `images/hero-illustration.svg` — the full-resolution vector
-  original (~900 KB, embedded photos recompressed) — in a new tab.
-- Favicons stay PNG/SVG for platform compatibility.
+Run the QA suite (uses Playwright, a dev dependency only):
 
-To regenerate a raster: `npx` + [sharp](https://sharp.pixelplumbing.com)
-(`sharp(src).resize(w).avif({ quality: 55–70 })`). For SVGs: `npx svgo --multipass`.
+```bash
+npm install         # installs Playwright
+npx playwright install chromium webkit   # first time only (WebKit = the iPhone/Safari checks)
+npm test            # build + 243 automated checks (incl. pricing calculators, idle performance, reduced motion, iPhone layout); writes docs/screenshots/*.jpg and docs/qa-results.json
+```
 
-## Styling
+## Project structure
 
-All CSS lives in `css/site.css`, ordered: shared base → per-page sections
-(`/* ===== ABOUT PAGE ===== */` etc.) → shared responsive media queries.
-Order matters — keep page-specific rules **before** the responsive block so
-mobile breakpoints aren't overridden. Each page links it with two font
-preloads ahead of it in `<head>`.
+```
+src/
+  pages/                 one file per page; a <!--meta {json}--> block sets title, description, path, CTA copy
+    index.html  aml.html  iq.html  about.html  pricing.html  contact.html
+    privacy-policy.html  terms-and-conditions.html  404.html
+  partials/              reusable components, included with {{> name}}
+    head.html            <head>: SEO, Open Graph, Twitter, favicons, fonts, CSS
+    header.html          fixed nav, mobile menu, skip link (+ sprite)
+    sprite.html          SVG icon set (V2 icons + additions)
+    page-hero-bg.html    hero waves, dot field, glow
+    cta-simple.html      final call-to-action band
+    footer.html          shared footer · footer-home.html (home variant) · footer-bottom.html
+  public/                copied as-is to dist/
+    assets/css/          fonts · tokens · base · components · sections + dashboard (from V2) · pages (new, token-based)
+    assets/js/           main.js (nav, reveal, timeline, globe, prefetch) · forms.js (shared form sending) · contact.js (form) · pricing.js (calculators, estimate emails)
+    assets/img/          brand/ og/ team/ partners/   (dots/ is generated by the build)
+    assets/fonts/        Manrope + JetBrains Mono (variable woff2, self-hosted)
+    robots.txt  CNAME
+scripts/build.mjs        build: partials + variables + prices + nav state + expired links + dot-field SVGs + CSS bundle + hashed assets + sitemap + host header files → dist/
+scripts/carry-over-assets.mjs   deploy step: keeps the live release's hashed CSS/JS/SVG in dist/
+scripts/serve.mjs        local server with production routing and security headers
+tests/qa.mjs             automated QA (Playwright)
+site.config.json         site URL, sign-in app URL, form endpoint + public form key, prices, calculator assumptions
+nginx.conf, Dockerfile   container hosting option
+.github/workflows/deploy-pages.yml   GitHub Pages deployment
+docs/DESIGN-SYSTEM.md    analysis of the V2 reference (typography, colours, header, layout, components, motion)
+docs/CONTENT-INVENTORY.md   page map, assets, limitations
+docs/screenshots/        QA screenshots for each page at 375 / 768 / 1280 / 1920 px + V2 comparison
+```
 
-## Deploy
+### Design system
 
-Push to `main` → `.github/workflows/static.yml` uploads the repo as-is to
-GitHub Pages. DNS: `www.finperiti.com` CNAME → GitHub Pages (see `CNAME`).
-Clean URLs like `/about` work because GitHub Pages resolves them to
-`about.html` automatically.
+All colours, type sizes, spacing, radii, shadows and motion values live in `src/public/assets/css/tokens.css`, copied unchanged from V2. Change a token there and every page follows. New components in `pages.css` only use these tokens. See `docs/DESIGN-SYSTEM.md`.
 
-## Editing
+### Editing content
 
-No tooling required. Open any `.html` file, change the markup, commit, push.
-Shared visual changes go in `css/site.css` (one place, every page).
+- **Prices:** change them once in `site.config.json` → `prices`.
+- **Time-limited links:** add `data-expires="YYYY-MM-DD"` to a link (e.g. an event invitation); it disappears from that date, at build time and in the browser.
+- **CSS:** edit the files in `src/public/assets/css/`; the build combines them in the order listed in `cssOrder` (scripts/build.mjs).
 
----
+- **Text:** edit the page in `src/pages/`.
+- **Navigation and footer:** edit `src/partials/header.html` or `footer*.html`. These apply to every page.
+- **Current-page highlight:** the build marks the current page in the navigation automatically.
 
-## Still to wire up before launch
+### Configuration (`site.config.json`, or environment variables at build time)
 
-1. **Contact form endpoint.** The form currently falls back to email
-   (`team@finperiti.com`). Point it at a Formspree URL or serverless function
-   to capture submissions properly.
-2. **"Sign in" link.** Hidden in the nav for now; the old links point at the
-   raw Azure app URL (`kind-river-...azurestaticapps.net/signup`). Replace with
-   a branded subdomain (e.g. `https://app.finperiti.com`) once DNS is set up —
-   search the files for `kind-river` to find every occurrence.
+| Key | Env var | Default | Used for |
+|---|---|---|---|
+| `siteUrl` | `SITE_URL` | `https://www.finperiti.com` | canonical, Open Graph, sitemap, robots |
+| `appUrl` | `APP_URL` | `https://kind-river-07dda5b03.6.azurestaticapps.net` | footer "Sign in" link (`/signup`) |
+| `formEndpoint` | `FORM_ENDPOINT` | `https://api.web3forms.com/submit` | contact form |
+| `formAccessKey` | `FORM_ACCESS_KEY` | key copied from the live contact page | contact form (Web3Forms public key) |
+| `robots` | `ROBOTS` | `index, follow` | meta robots (set `noindex, nofollow` for staging) |
+| `legalUpdated` | – | `17 October 2026` | "Last updated" date on the privacy notice and terms |
+| `prices.*` | – | AML 199 / 399, IQ 99 / 119 / 169 | every price on the site, the calculator and the structured data (`{{priceAmlEssentials}}` etc. in pages) |
+| `calculator.*` | – | 80% automated, 7.5-hour day, 40 clients / 15 h / 5 funds | pricing calculator assumptions and default slider values (shown without JavaScript too) |
 
-© 2026 finperiti Limited. finperiti® is a registered trademark of finperiti Ltd.,
-registered in the European Union.
+There are no secrets in this project. The Web3Forms access key is a public client-side key that is already published on the live site.
+
+## Deploying (replacing the current site)
+
+The current www.finperiti.com is served by **GitHub Pages**, so the simplest replacement is:
+
+1. **Repository:** in the repository that publishes www.finperiti.com, replace its contents with this project, or create a new repository.
+2. **Pages source:** under **Settings → Pages → Source**, choose **GitHub Actions**. The included workflow `.github/workflows/deploy-pages.yml` builds and publishes `dist/` on every push to `main` and once a day (so dated content such as `data-expires` links stays current). Each deploy also keeps the previous release's hashed CSS/JS, so pages visitors still have cached keep working.
+3. **Custom domain:** keep the custom domain `www.finperiti.com`. `dist/CNAME` is included, so no DNS change is needed.
+4. **Check after deploying:**
+   - `/`, `/about`, `/pricing`, `/contact`, `/privacy-policy` and `/terms-and-conditions` load.
+   - An unknown URL shows the new 404 page.
+   - Send **one real message through the contact form** and confirm it arrives at team@finperiti.com.
+5. **Search Console:** resubmit `https://www.finperiti.com/sitemap.xml`.
+
+### URL and SEO impact
+
+- **Page URLs:** all unchanged.
+- **Images:** the paths moved from `/images/...` to `/assets/img/...`. External sites that hot-link the old image URLs, such as social previews already cached, will need those files. If that matters, keep the old `/images/` folder alongside for a while; the build copies anything you put in `src/public/`.
+- **Removed files:** `/css/site.css` and `/fonts/*` from the old site are no longer used.
+
+### Caching and hosts
+
+CSS, JS and the dot-field SVGs have content-hashed names (`site.<hash>.css`), so they can be cached for a year and a new release is picked up through the HTML. How much of that reaches visitors depends on the host:
+
+| Host | HTML | Hashed CSS/JS/SVG | Security headers (CSP) | Set by |
+|---|---|---|---|---|
+| **GitHub Pages** (current) | 10 min | 10 min | none | fixed by GitHub, can't be changed |
+| **Netlify / Cloudflare Pages** | revalidated | 1 year, immutable | yes | `dist/_headers` (generated) |
+| **Azure Static Web Apps** | platform default | 1 year, immutable | yes | `dist/staticwebapp.config.json` (generated) |
+| **Docker / nginx** | revalidated | 1 year, immutable | yes | `nginx.conf` |
+
+On GitHub Pages the site is still fast (one stylesheet, small hashed files, prefetch on hover), but returning visitors re-check files every 10 minutes and no CSP is sent. Moving to one of the other hosts needs no code change. The CSP is defined in `scripts/build.mjs`; the build fails if `nginx.conf` or `scripts/serve.mjs` don't match it.
+
+### Other hosts
+
+- **Any static host** (Azure Static Web Apps, Netlify, S3 + CloudFront): upload `dist/`. Clean URLs (`/about` → `about.html`) and `404.html` are supported by these platforms. For S3, enable an extension rewrite.
+- **nginx or containers:**
+  ```bash
+  docker build -t finperiti-web .            # optional: --build-arg SITE_URL=... --build-arg APP_URL=...
+  docker run -p 8080:8080 finperiti-web
+  ```
+  `nginx.conf` sends security headers and a CSP that allows only the site itself plus `api.web3forms.com`. It also handles clean URLs and the 404 page.
+- **Staging:** build with `ROBOTS="noindex, nofollow" SITE_URL=https://staging.example.com npm run build` so the staging copy never competes with production in search results.
+
+## Quality checks (last run)
+
+The `npm test` suite reports **243/243 passing**. It covers:
+
+- **Every page at 375, 768, 1280 and 1920 px:**
+  - HTTP 200
+  - no console errors and no failed or 404 requests
+  - no horizontal overflow
+  - all images load
+- **Every page at desktop:**
+  - exactly one `<h1>`
+  - title, description and canonical present
+  - self-hosted fonts load
+- **Links:**
+  - every internal link and anchor across all pages resolves
+  - unknown URLs return the 404 page
+- **Navigation:**
+  - the mobile menu opens and closes with the toggle and Escape, and its links navigate
+  - the current page is marked in the nav
+  - the nav switches to its scrolled state
+  - deep links such as `/about#rachel` work
+- **Contact form** (endpoint mocked, so nothing is sent):
+  - required-field and email validation work
+  - nothing is posted while invalid
+  - the success path posts the expected fields and resets the form
+  - the error path shows the error message
+- **No JavaScript:** all content is visible.
+
+Also verified:
+
+- **Content fidelity:** an automated comparison against the live text (476/480 fragments identical; the rest are explained in `docs/CONTENT-INVENTORY.md`).
+- **nginx:** `nginx.conf` passed `nginx -t`, and routing was checked on nginx 1.24.
+- **Visual comparison with V2:** `docs/screenshots/compare-v2-vs-redesign-hero-1280.jpg`.
+
+## Rebuilt pages and limitations
+
+**Pages:** Home, About, Pricing, Contact, Privacy Policy, Terms & Conditions and 404.
+
+**Limitations:**
+
+- The home-page footer link **Careers** was omitted because it points to `#` on the live site and no careers page exists.
+- The Docker image was not built here, because no Docker daemon was available. The nginx configuration itself was tested.
+- No real contact-form submission was sent during testing.
+
+Full details are in `docs/CONTENT-INVENTORY.md`.

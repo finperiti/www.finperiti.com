@@ -1,0 +1,20 @@
+{
+  "siteUrl": "https://www.finperiti.com",
+  "appUrl": "https://kind-river-07dda5b03.6.azurestaticapps.net",
+  "formEndpoint": "https://api.web3forms.com/submit",
+  "formAccessKey": "7abf0add-2734-49c2-b132-2ac6a184e67d",
+  "robots": "index, follow",
+  "legalUpdated": "17 October 2026",
+  "prices": {
+    "amlEssentials": 199,
+    "amlProfessional": 399,
+    "iqIntegrity": 99,
+    "iqComparison": 119,
+    "iqFiling": 169
+  },
+  "calculator": {
+    "automationShare": 0.8,
+    "staffDayHours": 7.5,
+    "defaults": { "clients": 40, "hours": 15, "funds": 5 }
+  }
+}
