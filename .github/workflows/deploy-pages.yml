@@ -1,0 +1,43 @@
+# Builds the site and publishes dist/ to GitHub Pages (the platform the current www.finperiti.com runs on).
+# Enable: repository Settings → Pages → Source: "GitHub Actions". Custom domain is kept via dist/CNAME.
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Daily rebuild so date-based content (data-expires links, sitemap lastmod) is current even without a push.
+  # Note: GitHub pauses scheduled workflows after 60 days without repository activity.
+  schedule:
+    - cron: "10 0 * * *"
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history: each page's sitemap <lastmod> is its last commit date
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/build.mjs
+      # Keep the live release's hashed CSS/JS so cached pages from it still work after this deploy
+      - run: node scripts/carry-over-assets.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

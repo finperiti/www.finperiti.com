@@ -1,0 +1,293 @@
+<!--meta
+{
+  "path": "/iq",
+  "page": "iq",
+  "title": "finperiti IQ | AIFMD Annex IV Report Checks Before Submission",
+  "ogTitle": "finperiti IQ | AIFMD Annex IV Report Checks Before Submission",
+  "description": "Check your AIFMD Annex IV report against the source data before you submit. finperiti IQ catches errors that pass format validation. From €{{priceIqIntegrity}} per fund report.",
+  "jsonld": "iq",
+  "ctaTitle": "Check your next filing before it goes.",
+  "ctaLead": "Talk to us about finperiti IQ for your next Annex IV reporting period.",
+  "ctaButton": "Talk to us"
+}
+-->
+{{> head}}
+<body>
+{{> header}}
+
+  <main id="main">
+    <section class="hero page-hero product-hero" aria-labelledby="iq-title">
+{{> page-hero-bg}}
+      <div class="container product-hero__grid">
+        <div class="page-hero__copy">
+          <div class="tag-row" data-reveal>
+            <span class="tag tag--solid">finperiti IQ</span>
+            <span class="tag tag--outline">AIFMD Annex IV reporting</span>
+          </div>
+          <h1 class="page-hero__title" id="iq-title" data-reveal>Check your Annex IV report <span class="text-gradient">before the regulator does</span></h1>
+          <p class="page-hero__lead" data-reveal>A regulator&rsquo;s portal tells you the file is well formed. It doesn&rsquo;t tell you the numbers are right. finperiti IQ checks your AIFMD Annex IV report against the source data itself, whoever prepared it, so errors are caught before submission.</p>
+          <p class="launch-note" data-reveal><span class="launch-note__dot" aria-hidden="true"></span>Launching January 2027 &middot; from &euro;{{priceIqIntegrity}} per fund report</p>
+          <div class="hero__ctas" data-reveal>
+            <a class="btn btn--primary btn--lg" href="/contact">Talk to us</a>
+            <a class="btn btn--ghost-light btn--lg" href="/iq#plans">See IQ pricing</a>
+          </div>
+        </div>
+
+        <figure class="check-panel" data-reveal="zoom" aria-label="Illustrative example of a finperiti IQ check">
+          <div class="check-panel__head">
+            <span class="check-panel__file">AIF report &middot; Q3 2026.xml</span>
+            <span class="check-panel__tag">Illustrative</span>
+          </div>
+          <ul class="check-panel__rows">
+            <li class="check-row check-row--ok">
+              <span class="check-row__icon" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+              <span class="check-row__text"><strong>File format</strong><small>Well formed, would pass the gateway</small></span>
+              <span class="badge badge--ok">Passed</span>
+            </li>
+            <li class="check-row check-row--warn">
+              <span class="check-row__icon" aria-hidden="true"><svg><use href="#i-alert"/></svg></span>
+              <span class="check-row__text"><strong>Figures against source data</strong><small>Reported values that don&rsquo;t match the underlying records</small></span>
+              <span class="badge badge--warn">2 to review</span>
+            </li>
+            <li class="check-row check-row--warn">
+              <span class="check-row__icon" aria-hidden="true"><svg><use href="#i-alert"/></svg></span>
+              <span class="check-row__text"><strong>Change since last period</strong><small>A movement nobody has explained</small></span>
+              <span class="badge badge--warn">1 to review</span>
+            </li>
+          </ul>
+          <figcaption class="check-panel__foot"><svg aria-hidden="true"><use href="#i-file-check"/></svg>Accepted is not the same as correct.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- The gap -->
+    <section class="section" id="the-gap" aria-labelledby="gap-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Why check before you file</p>
+          <h2 class="section-title" id="gap-title">A filing can be accepted and still be wrong</h2>
+          <p class="section-lead">Annex IV reports go to each regulator in XML. The gateway checks the file is well formed, not that the judgements inside it are sound. That part is left to you.</p>
+        </header>
+        <div class="compare-cols">
+          <div class="compare-col" data-reveal>
+            <h3 class="compare-col__title">What the regulator&rsquo;s gateway checks</h3>
+            <ul class="dot-list">
+              <li>The file is valid XML in the required format</li>
+              <li>The expected fields are present</li>
+              <li>Values are the right type and length</li>
+            </ul>
+          </div>
+          <div class="compare-col compare-col--accent" data-reveal>
+            <h3 class="compare-col__title">What finperiti IQ adds</h3>
+            <ul class="check-list">
+              <li>Checks the reported figures against the underlying source data</li>
+              <li>Catches errors that pass format validation</li>
+              <li>Compares the filing with your previous one to flag unexplained movements</li>
+              <li>Works on a filing whichever system or provider produced it</li>
+            </ul>
+          </div>
+        </div>
+        <p class="callout" data-reveal>A fund manager can delegate the preparation of a report, but not the responsibility for it. An independent check before submission is part of showing that oversight.</p>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="section section--tinted features" id="who" aria-labelledby="who-title">
+      <div class="deco-dots deco-dots--br" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Who it&rsquo;s for</p>
+          <h2 class="section-title" id="who-title">For everyone who signs off an Annex IV report</h2>
+        </header>
+        <div class="card-grid card-grid--3">
+          <article class="feature-card" data-reveal style="--accent:var(--fp-petrol); --accent-bg:var(--fp-tint)">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-chart"/></svg></span>
+            <h3 class="feature-card__title">Fund managers</h3>
+            <p>EU AIFMs, and non-EU managers marketing funds into the EU under national private placement, who file with one or several regulators.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:#0b8fa3; --accent-bg:#def4f6">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-building"/></svg></span>
+            <h3 class="feature-card__title">Management companies</h3>
+            <p>ManCos overseeing reporting across many funds and delegates, who need consistent checks on every filing.</p>
+          </article>
+          <article class="feature-card" data-reveal style="--accent:var(--fp-dot-2); --accent-bg:#e1f5f2">
+            <span class="feature-card__icon" aria-hidden="true"><svg><use href="#i-file-check"/></svg></span>
+            <h3 class="feature-card__title">Fund administrators</h3>
+            <p>Administrators preparing reports for clients, who want a second check before a filing leaves the building.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="section pricing" id="plans" aria-labelledby="plans-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Pricing</p>
+          <h2 class="section-title" id="plans-title">Priced per fund report</h2>
+          <p class="section-lead">Built for recurring filings, whether you report quarterly, half-yearly or annually. Prices exclude VAT.</p>
+        </header>
+        <div class="price-grid">
+          <article class="price-card plan-card" data-reveal aria-labelledby="iq-integrity">
+            <h3 class="price-card__name" id="iq-integrity">Integrity</h3>
+            <p class="price-card__tag">Your filing, checked</p>
+            <p class="price-card__price"><span class="amount">&euro;{{priceIqIntegrity}}</span><span class="per">/report</span></p>
+            <p class="price-card__desc">A full integrity check of your fund report before it goes to the regulator.</p>
+          </article>
+          <article class="price-card price-card--featured plan-card" data-reveal aria-labelledby="iq-comparison">
+            <h3 class="price-card__name" id="iq-comparison">Integrity + Comparison</h3>
+            <p class="price-card__tag">Checked against the prior period</p>
+            <p class="price-card__price"><span class="amount">&euro;{{priceIqComparison}}</span><span class="per">/report</span></p>
+            <p class="price-card__desc">Everything in Integrity, plus a comparison with your previous filing to flag unexpected changes.</p>
+          </article>
+          <article class="price-card price-card--enterprise plan-card" data-reveal aria-labelledby="iq-filing">
+            <h3 class="price-card__name" id="iq-filing">Full + Filing</h3>
+            <p class="price-card__tag">We file it for you</p>
+            <p class="price-card__price"><span class="amount">&euro;{{priceIqFiling}}</span><span class="per">/report</span></p>
+            <p class="price-card__desc">Checked, compared and submitted on your behalf, end to end.</p>
+          </article>
+        </div>
+        <div class="next-callout" data-reveal>
+          <span class="next-callout__label">Coming in 2027</span>
+          <p><strong>SEC Form PF.</strong> Checks for Form PF filings are on the way, for US advisers to private funds. Pricing at launch.</p>
+          <a class="link-arrow" href="/contact">Register your interest <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing calculator -->
+    <section class="section calc" id="calculator" aria-labelledby="calc-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Pricing calculator</p>
+          <h2 class="section-title" id="calc-title">Estimate your cost</h2>
+          <p class="section-lead">Pick a plan, your number of funds and how often you file. Prices exclude VAT.</p>
+        </header>
+
+        <div class="calc-grid" data-calculator data-automation="{{calcAutomationShare}}" data-staff-day="{{calcStaffDayHours}}">
+          <!-- finperiti IQ -->
+          <div class="calc-panel" data-calc="iq" data-reveal>
+            <div class="calc-panel__head">
+              <span class="tag-row"><span class="tag tag--brand">finperiti IQ</span><span class="tag tag--scope">AIFMD Annex IV reporting</span></span>
+              <span class="calc-panel__unit">Per fund report</span>
+            </div>
+            <div class="calc-field">
+              <span class="calc-field__label" id="calc-iq-plan">Plan</span>
+              <div class="seg" role="group" aria-labelledby="calc-iq-plan" data-seg="iq-plan">
+                <button type="button" data-value="{{priceIqIntegrityValue}}" aria-pressed="true">Integrity</button>
+                <button type="button" data-value="{{priceIqComparisonValue}}" data-name="Integrity + Comparison" aria-pressed="false">Comparison</button>
+                <button type="button" data-value="{{priceIqFilingValue}}" aria-pressed="false">Full + Filing</button>
+              </div>
+            </div>
+            <div class="calc-field">
+              <label class="calc-field__label" for="pc-funds">Funds <output id="pc-funds-out" for="pc-funds">{{calcFunds}}</output></label>
+              <input class="range" type="range" id="pc-funds" min="1" max="50" step="1" value="{{calcFunds}}" />
+            </div>
+            <div class="calc-field">
+              <span class="calc-field__label" id="calc-iq-freq">Filing frequency</span>
+              <div class="seg" role="group" aria-labelledby="calc-iq-freq" data-seg="iq-freq">
+                <button type="button" data-value="4" aria-pressed="true">Quarterly</button>
+                <button type="button" data-value="2" aria-pressed="false">Half-yearly</button>
+                <button type="button" data-value="1" aria-pressed="false">Annually</button>
+              </div>
+            </div>
+            <div class="calc-result" aria-live="polite">
+              <div><span class="calc-result__label">Reports per year</span><span class="calc-result__value" id="pc-iq-r">{{calcIqReports}}</span></div>
+              <div><span class="calc-result__label">Annual</span><span class="calc-result__value" id="pc-iq-y">&euro;{{calcIqAnnual}}</span></div>
+            </div>
+
+            <div class="lead-box" data-lead="iq">
+              <div class="lead-box__bar">
+                <p><strong>Want a copy?</strong> We&rsquo;ll email you these figures so you can share them with your partners.</p>
+                <button type="button" class="btn btn--primary lead-box__open" aria-expanded="false" aria-controls="lead-form-iq">Email me this estimate</button>
+              </div>
+              <form class="form lead-box__form" id="lead-form-iq" method="POST" action="{{formEndpoint}}" hidden novalidate>
+                <input type="hidden" name="access_key" value="{{formAccessKey}}" />
+                <input type="hidden" name="subject" value="finperiti IQ (Annex IV) estimate request" />
+                <input type="hidden" name="from_name" value="finperiti.com pricing calculator" />
+                <input type="hidden" name="estimate" value="" />
+                <input type="checkbox" name="botcheck" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <div class="form__row">
+                  <div class="field">
+                    <label class="field__label" for="lead-iq-email">Work email</label>
+                    <input class="field__input" type="email" id="lead-iq-email" name="email" required autocomplete="email" placeholder="you@yourfirm.com" />
+                  </div>
+                  <div class="field">
+                    <label class="field__label" for="lead-iq-firm">Firm name</label>
+                    <input class="field__input" type="text" id="lead-iq-firm" name="firm" required autocomplete="organization" placeholder="Your firm" />
+                  </div>
+                </div>
+                <label class="checkbox"><input type="checkbox" name="updates" value="Yes" /> <span>Send me occasional finperiti product updates. You can unsubscribe at any time.</span></label>
+                <div class="lead-box__actions">
+                  <button type="submit" class="btn btn--primary">Send my estimate</button>
+                  <p class="lead-box__note">We&rsquo;ll use your details to send your estimate and follow up on it. See our <a href="/privacy-policy">privacy notice</a>.</p>
+                </div>
+                <p class="lead-box__error" role="alert" hidden></p>
+              </form>
+              <div class="form-msg form-msg--ok lead-box__done" role="status" hidden>
+                <svg aria-hidden="true"><use href="#i-check"/></svg>
+                <p><strong>Thanks, your request is in.</strong> We&rsquo;ll email your estimate to <span data-lead-to></span> within one working day.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--tinted" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Questions</p>
+          <h2 class="section-title" id="faq-title">Annex IV reporting, answered</h2>
+        </header>
+        <div class="faq" data-reveal>
+          <details class="faq__item">
+            <summary>What is AIFMD Annex IV reporting?</summary>
+            <div class="faq__body"><p>Annex IV is the standard supervisory report that alternative investment fund managers file with their regulators under the Alternative Investment Fund Managers Directive (AIFMD). It covers what each fund holds, how it is exposed, its liquidity, its investors and its leverage. It goes to regulators only, not to investors or the public.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Who has to file Annex IV?</summary>
+            <div class="faq__body"><p>Every manager managing or marketing alternative investment funds in the EU. EU managers file with their home regulator. Non-EU managers, such as a US adviser marketing a fund to investors in Ireland or Germany under national private placement, file with the regulator in each country where they market.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>How often, and by when, must Annex IV be filed?</summary>
+            <div class="faq__body"><p>Frequency depends broadly on the manager&rsquo;s assets under management: yearly for smaller managers, half-yearly in the middle band and quarterly above &euro;1bn, with some carve-outs. Each report is due within one month of the period end, with 15 extra days for funds of funds.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>If the regulator&rsquo;s portal accepts my file, isn&rsquo;t it correct?</summary>
+            <div class="faq__body"><p>Not necessarily. Gateway acceptance is a schema check: it confirms the file is well formed and in the right format. It does not check whether the figures are a true reflection of the fund. A report can pass every format check and still contain errors.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>How do I check an Annex IV report before submission?</summary>
+            <div class="faq__body"><p>finperiti IQ checks the reported figures against the source data itself, catches errors that pass format validation, and can compare the filing with your previous one to flag movements nobody has explained. It works on a filing whichever system or provider produced it.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Does finperiti IQ only work with reports built in finperiti?</summary>
+            <div class="faq__body"><p>No. finperiti IQ validates against the underlying source data, so it can check a filing whoever prepared it, not just filings built on one template.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Does AIFMD II change Annex IV reporting from April 2027?</summary>
+            <div class="faq__body"><p>AIFMD II (Directive (EU) 2024/927) will bring a new, more detailed reporting template, and the new rules apply in law from 16 April 2027. But the template itself is still being written by ESMA, which expects the new reporting to go live in the first half of 2029 at the earliest. Until then, the current Annex IV template stays in force.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Does finperiti IQ support SEC Form PF?</summary>
+            <div class="faq__body"><p>Checks for SEC Form PF filings are coming in 2027. Pricing will be announced at launch. You can register your interest through our <a href="/contact">contact page</a>.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>How much does finperiti IQ cost?</summary>
+            <div class="faq__body"><p>finperiti IQ is priced per fund report: Integrity &euro;{{priceIqIntegrity}}, Integrity + Comparison &euro;{{priceIqComparison}}, and Full + Filing &euro;{{priceIqFiling}}, where we submit the report for you. Prices exclude VAT. finperiti IQ launches in January 2027.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+{{> cta-simple}}
+  </main>
+
+{{> footer}}
+  <script src="/assets/js/forms.js" defer></script>
+  <script src="/assets/js/pricing.js" defer></script>
+</body>
+</html>

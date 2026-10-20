@@ -1,0 +1,1101 @@
+{
+  "date": "2026-10-20T02:54:20.341Z",
+  "failures": 3,
+  "results": [
+    {
+      "name": "desktop / responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop / no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop / no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop / images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop / exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop / title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop / self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "desktop /aml responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop /aml no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /aml no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop /aml images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /aml exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop /aml title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /aml self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "desktop /iq responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop /iq no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /iq no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop /iq images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /iq exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop /iq title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /iq self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "desktop /about responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop /about no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /about no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop /about images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /about exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop /about title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /about self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "desktop /contact responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop /contact no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /contact no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop /contact images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /contact exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop /contact title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /contact self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "desktop /privacy-policy responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop /privacy-policy no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /privacy-policy no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop /privacy-policy images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /privacy-policy exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop /privacy-policy title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /privacy-policy self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "desktop /terms-and-conditions responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop /terms-and-conditions no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /terms-and-conditions no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "desktop /terms-and-conditions images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /terms-and-conditions exactly one h1",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "desktop /terms-and-conditions title + description + canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop /terms-and-conditions self-hosted fonts loaded",
+      "ok": true,
+      "detail": "Manrope,JetBrains Mono"
+    },
+    {
+      "name": "wide / responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide / no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide / no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide / images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /aml responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide /aml no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /aml no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide /aml images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /iq responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide /iq no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /iq no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide /iq images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /about responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide /about no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /about no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide /about images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /contact responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide /contact no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /contact no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide /contact images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /privacy-policy responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide /privacy-policy no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /privacy-policy no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide /privacy-policy images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /terms-and-conditions responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "wide /terms-and-conditions no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wide /terms-and-conditions no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "wide /terms-and-conditions images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet / responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet / no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet / no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet / images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /aml responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet /aml no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /aml no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet /aml images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /iq responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet /iq no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /iq no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet /iq images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /about responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet /about no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /about no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet /about images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /contact responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet /contact no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /contact no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet /contact images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /privacy-policy responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet /privacy-policy no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /privacy-policy no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet /privacy-policy images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /terms-and-conditions responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "tablet /terms-and-conditions no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet /terms-and-conditions no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "tablet /terms-and-conditions images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile / responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile / no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile / no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile / images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /aml responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile /aml no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /aml no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /aml images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /iq responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile /iq no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /iq no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /iq images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /about responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile /about no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /about no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /about images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /contact responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile /contact no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /contact no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /contact images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /privacy-policy responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile /privacy-policy no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /privacy-policy no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /privacy-policy images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /terms-and-conditions responds 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile /terms-and-conditions no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /terms-and-conditions no horizontal overflow",
+      "ok": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /terms-and-conditions images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /#why-now",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /#how-it-works",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /aml#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /aml#plans",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /iq#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /about#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /contact#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /privacy-policy#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /terms-and-conditions#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anchor /does-not-exist#main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /aml",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /iq",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /about",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /contact",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /#news",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /aml#plans",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /about#fiona",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /about#richard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /about#gordon",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /about#rachel",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /about#james",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /about#paul",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /privacy-policy",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /terms-and-conditions",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "link /#the-problem",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /#why-us",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "link /iq#plans",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "unknown path serves 404 page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: menu hidden initially",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: toggle opens menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: Escape closes menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: menu link navigates",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "current page marked in nav",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: nav gets scrolled state",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "deep link /about#rachel targets team card",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav: News active on #news, Home again at the top",
+      "ok": false,
+      "detail": "Home → Home"
+    },
+    {
+      "name": "form: empty submit shows validation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form: nothing sent when invalid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form: invalid email blocked",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form: posts expected fields",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form: success message + reset",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form: error message on failure",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: /aml shows only the AML panel",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: AML defaults to Essentials",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: AML Professional = €399 / €4,788",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: AML Groups shows quote instead of price",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: time saved follows sliders (100 × 15h × 80%)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead: form opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead: invalid email blocked",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead: posts estimate summary",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: /iq shows only the IQ panel",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: IQ defaults to 5 funds quarterly = 20 reports, €1,980",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "calc: IQ Full + Filing annually = 5 reports, €845",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead: IQ estimate names the full plan",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "perf /: idle page does no style/layout work",
+      "ok": true,
+      "detail": "0 style recalcs, 0 layouts in 3 s"
+    },
+    {
+      "name": "perf /#news: idle page does no style/layout work",
+      "ok": true,
+      "detail": "0 style recalcs, 0 layouts in 3 s"
+    },
+    {
+      "name": "perf /aml: idle page does no style/layout work",
+      "ok": true,
+      "detail": "0 style recalcs, 0 layouts in 3 s"
+    },
+    {
+      "name": "perf /iq: idle page does no style/layout work",
+      "ok": true,
+      "detail": "0 style recalcs, 0 layouts in 3 s"
+    },
+    {
+      "name": "reduced motion: hero and cards visible at once (styled page)",
+      "ok": true,
+      "detail": "1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+    },
+    {
+      "name": "hero entrance runs without main.js",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "hero dashboard charts fill without main.js",
+      "ok": true,
+      "detail": "73.6264px, 100px"
+    },
+    {
+      "name": "without main.js every revealed block still appears",
+      "ok": true,
+      "detail": "0 hidden"
+    },
+    {
+      "name": "card hover lift works after the entrance",
+      "ok": true,
+      "detail": "matrix(1, 0, 0, 1, 0, -6)"
+    },
+    {
+      "name": "iPhone / .hero__copy .eyebrow centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone / .hero__title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone / .hero__lead centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone / .hero__benefits centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone / .how__intro .section-title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone / .security__copy .section-title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone / .iq-band__copy .section-title centred",
+      "ok": false,
+      "detail": "px off"
+    },
+    {
+      "name": "iPhone / .iq-band__copy .launch-note centred",
+      "ok": false,
+      "detail": "px off"
+    },
+    {
+      "name": "iPhone / .final-cta .section-title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /aml .page-hero__title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /aml .page-hero .tag-row centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /aml .page-hero .launch-note centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /aml .faq-layout .section-title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /aml .security__copy .section-title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /contact .page-hero__title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /contact .contact__email centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /privacy-policy .page-hero__title centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /privacy-policy .page-hero__meta centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone /privacy-policy .legal__aside ul centred",
+      "ok": true,
+      "detail": "0px off"
+    },
+    {
+      "name": "iPhone: trust badges centred in their cells",
+      "ok": true,
+      "detail": "px off"
+    },
+    {
+      "name": "content visible without JavaScript",
+      "ok": true,
+      "detail": "1"
+    }
+  ]
+}

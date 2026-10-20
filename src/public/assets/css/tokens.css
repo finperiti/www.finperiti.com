@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Finperiti — design tokens (from Finperiti.Web.V2, unchanged)
+   Source of truth: Finperiti Brandbook v1.0 (2026) + colours sampled from the
+   supplied logo (wordmark #0E4F5E, dotted motif #0E8781 → #0E9F90 → #5DE6D2).
+   Every colour, size and motion value used by the site is defined here.
+   ========================================================================== */
+:root {
+  /* Brand — core (brand book) */
+  --fp-petrol: #0e4f5e;          /* Primary brand colour · logo wordmark */
+  --fp-jewel: #0e9f90;           /* Accent · charts, highlights (Ink text on top) */
+  --fp-bright: #5de6d2;          /* Bright Teal · dark backgrounds only */
+  --fp-ink: #08191c;             /* Deepest value · text on bright fills */
+  --fp-steel: #5b6b7c;           /* Secondary text, muted UI */
+  --fp-mist: #eaf0f1;            /* Light surfaces */
+  --fp-evergreen: #1c7a5b;       /* Reserved: success states */
+  --fp-coral: #e0a48a;           /* Reserved: caution states */
+
+  /* Brand — extended dark surfaces (petrol family) */
+  --fp-ocean: #003943;
+  --fp-midnight: #002b36;
+  --fp-abyss: #001f27;
+
+  /* Brand — extended accents (logo dots) */
+  --fp-turquoise: #3ee3d3;       /* primary CTA fill on dark, between Bright Teal and aqua */
+  --fp-aqua: #16cfc5;
+  --fp-dot-1: #0e8781;
+  --fp-dot-2: var(--fp-jewel);
+  --fp-dot-3: var(--fp-bright);
+  --fp-soft-aqua: #d5f6f1;
+  --fp-tint: #ecf7f5;
+
+  /* Neutrals */
+  --fp-off-white: #f6f9fa;
+  --fp-white: #ffffff;
+  --fp-text: #102b38;
+  --fp-text-2: #4f6670;          /* ≥ 5.9:1 on white */
+  --fp-text-3: #5f747d;          /* ≥ 4.5:1 on white and off-white */
+  --fp-border: #dfeaed;
+  --fp-border-strong: #c9dadf;
+
+  /* On-dark text */
+  --fp-on-dark: #ffffff;
+  --fp-on-dark-2: #bcd5d9;
+  --fp-on-dark-3: #8fb0b6;
+  --fp-line-dark: rgba(255, 255, 255, 0.11);
+
+  /* Status — functional colours (dashboard + badges) */
+  --fp-ok: var(--fp-evergreen); --fp-ok-bg: #e2f2ec;
+  --fp-info: #08707f;           --fp-info-bg: #ddf2f4;
+  --fp-warn: #9a5a1c;           --fp-warn-bg: #fbeee6;  --fp-warn-fill: var(--fp-coral);
+  --fp-risk: #b8323d;           --fp-risk-bg: #fbe5e6;  /* functional: high risk needs a clear alarm colour */
+  --fp-violet: #5a50c0;         --fp-violet-bg: #ecebfa;
+
+  /* Gradients */
+  --fp-grad-hero: radial-gradient(1100px 640px at 82% 12%, rgba(93, 230, 210, 0.17), transparent 62%),
+                  radial-gradient(900px 620px at -5% 105%, rgba(14, 159, 144, 0.22), transparent 60%),
+                  linear-gradient(160deg, var(--fp-petrol) 0%, var(--fp-ocean) 46%, var(--fp-midnight) 100%);
+  --fp-grad-dark: radial-gradient(800px 500px at 100% 0%, rgba(110, 175, 155, 0.22), transparent 60%),
+                  linear-gradient(150deg, var(--fp-petrol) 0%, var(--fp-ocean) 55%, var(--fp-midnight) 100%);
+  --fp-grad-accent: linear-gradient(92deg, var(--fp-bright) 0%, var(--fp-turquoise) 50%, var(--fp-aqua) 100%);
+  --fp-grad-brand: linear-gradient(135deg, #0e4f5e 0%, #0b7e72 100%);
+
+  /* Typography */
+  --fp-font: "Manrope", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fp-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --fp-fs-hero: clamp(2.5rem, 1.55rem + 3.3vw, 4.25rem);     /* 40 → 68px */
+  --fp-fs-h2: clamp(1.875rem, 1.35rem + 1.7vw, 2.75rem);     /* 30 → 44px */
+  --fp-fs-h3: clamp(1.125rem, 1.05rem + 0.3vw, 1.375rem);    /* 18 → 22px */
+  --fp-fs-lead: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);  /* 17 → 19px */
+  --fp-fs-body: 1rem;
+  --fp-fs-sm: 0.875rem;
+  --fp-fs-xs: 0.75rem;
+  --fp-fs-2xs: 0.6875rem;
+
+  /* Spacing scale (4px base, brand book) */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px; --sp-5: 20px;
+  --sp-6: 24px; --sp-8: 32px; --sp-10: 40px; --sp-12: 48px; --sp-16: 64px;
+  --sp-20: 80px; --sp-24: 96px;
+  --section-y: clamp(72px, 4.5rem + 3vw, 128px);
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --nav-h: 76px;
+
+  /* Shape */
+  --r-xs: 6px; --r-sm: 10px; --r-md: 14px; --r-lg: 20px; --r-xl: 28px; --r-pill: 999px;
+
+  /* Elevation */
+  --sh-xs: 0 1px 2px rgba(16, 43, 56, 0.06);
+  --sh-sm: 0 2px 6px rgba(16, 43, 56, 0.05), 0 1px 2px rgba(16, 43, 56, 0.05);
+  --sh-md: 0 14px 32px -14px rgba(16, 43, 56, 0.20), 0 2px 6px rgba(16, 43, 56, 0.05);
+  --sh-lg: 0 30px 60px -24px rgba(16, 43, 56, 0.30), 0 8px 18px -8px rgba(16, 43, 56, 0.10);
+  --sh-window: 0 50px 100px -30px rgba(0, 16, 22, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.10), 0 0 90px -10px rgba(93, 230, 210, 0.28);
+  --sh-glow: 0 10px 28px -8px rgba(62, 227, 211, 0.6);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-std: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 150ms; --t-base: 220ms; --t-slow: 300ms; --t-enter: 700ms;
+
+  /* Focus */
+  --focus-ring: 0 0 0 2px var(--fp-white), 0 0 0 4px var(--fp-petrol);
+  --focus-ring-dark: 0 0 0 2px var(--fp-midnight), 0 0 0 4px var(--fp-bright);
+}
