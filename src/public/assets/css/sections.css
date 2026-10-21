@@ -258,6 +258,7 @@
 @media (max-width: 1080px) {
   .price-grid { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
   .price-card--featured { order: -1; }
+  .price-grid--ordered .price-card--featured { order: 0; }  /* keep ascending price order when stacked */
 }
 @media (max-width: 480px) { .price-card { padding: var(--sp-6); } }
 
