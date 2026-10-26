@@ -191,6 +191,14 @@
   border-radius: var(--r-md); background: var(--accent-bg); color: var(--accent);
 }
 .feature-card__icon svg { width: 26px; height: 26px; }
+/* Header row: icon left of the title; the min-height reserves two title lines so descriptions line up across a row */
+.feature-card__head {
+  display: flex; align-items: center; gap: 14px;
+  min-height: calc(var(--fp-fs-h3) * 1.25 * 2);
+  margin-bottom: var(--sp-3); /* + the card's 12px gap = 24px to the description */
+}
+.feature-card__head .feature-card__icon { flex: none; margin-bottom: 0; }
+.feature-card__head .feature-card__title { min-width: 0; }
 .feature-card__title { font-size: var(--fp-fs-h3); font-weight: 800; letter-spacing: -0.015em; line-height: 1.25; }
 .feature-card p { color: var(--fp-text-2); font-size: 0.9375rem; line-height: 1.6; }
 .feature-card__points { margin-top: auto; padding-top: var(--sp-3); border-top: 1px dashed var(--fp-border); display: grid; gap: 6px; }
