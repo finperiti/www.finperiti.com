@@ -12,6 +12,8 @@
 .card-grid--5 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .card-grid--5 > :nth-child(-n+3) { grid-column: span 2; }
 .card-grid--5 > :nth-child(n+4) { grid-column: span 3; }
+/* Centred cards: icon above the title, everything centred (finperiti IQ audience) */
+.card-grid--centered > .feature-card { align-items: center; text-align: center; }
 @media (max-width: 1080px) {
   .card-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card-grid--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -118,7 +120,7 @@
 .quote-card__attr::before, .quote-card__attr::after { content: ""; width: 32px; height: 1px; background: var(--fp-border-strong); }
 
 /* ---------- Pricing ---------- */
-.price-card__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.price-card__price { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 4px 8px; }
 .price-card__price .per { font-size: 1rem; font-weight: 700; color: var(--fp-text-2); }
 .price-card__price .setup {
   margin-left: 4px; padding: 5px 10px; border-radius: var(--r-pill);
@@ -560,6 +562,7 @@
 .next-callout strong { color: var(--fp-text); }
 
 /* ---------- Plan cards (product pages + pricing) ---------- */
+.plan-card .price-card__name, .plan-card .price-card__tag { text-align: center; }
 .plan-card .price-card__tag { margin-top: 4px; }
 .plan-card .price-card__price { margin: var(--sp-6) 0 var(--sp-4); }
 .plan-card .price-card__desc { margin-bottom: var(--sp-6); }
