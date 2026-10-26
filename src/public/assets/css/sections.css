@@ -191,7 +191,9 @@
 .security__copy .btn { margin-top: var(--sp-8); }
 .security__items { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
 .security__items li {
-  display: grid; align-content: start; gap: 12px; padding: var(--sp-5);
+  /* Icon and title share the first row; the description spans the full width below */
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-content: start; align-items: center;
+  gap: var(--sp-6) 14px; padding: var(--sp-5);
   border-radius: var(--r-lg);
   background: rgba(0, 31, 39, 0.55);
   border: 1px solid var(--fp-line-dark);
@@ -199,8 +201,11 @@
   transition: border-color var(--t-slow), transform var(--t-slow) var(--ease-out), background-color var(--t-slow);
 }
 .security__items li:hover { border-color: rgba(93, 230, 210, 0.45); transform: translateY(-3px); background: rgba(0, 31, 39, 0.7); }
-.security__items h3 { font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
-.security__items p { font-size: var(--fp-fs-sm); color: var(--fp-on-dark-2); line-height: 1.5; }
+.security__items li > div { display: contents; }
+/* Two columns: reserve two title lines in the header row so descriptions line up across a row */
+.security__items:not(.security__items--stack) li { grid-template-rows: minmax(calc(1rem * 1.6 * 2), auto); }
+.security__items h3 { font-size: 1rem; font-weight: 800; }
+.security__items p { grid-column: 1 / -1; font-size: var(--fp-fs-sm); color: var(--fp-on-dark-2); line-height: 1.5; }
 .security__icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: rgba(93, 230, 210, 0.12); color: var(--fp-bright); border: 1px solid rgba(93, 230, 210, 0.25); }
 .security__icon svg { width: 20px; height: 20px; }
 .security__globe { position: absolute; z-index: 0; right: -14%; top: 50%; width: min(760px, 70%); aspect-ratio: 1; transform: translateY(-50%); opacity: 0.85; pointer-events: none; }
@@ -212,6 +217,7 @@
 @media (max-width: 560px) {
   .security { padding: 32px 20px; border-radius: var(--r-lg); }
   .security__items { grid-template-columns: 1fr; }
+  .security__items li { grid-template-rows: none; }
   .security-wrap .container { padding-inline: 12px; }
 }
 
