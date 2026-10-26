@@ -76,7 +76,7 @@
   --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px; --sp-5: 20px;
   --sp-6: 24px; --sp-8: 32px; --sp-10: 40px; --sp-12: 48px; --sp-16: 64px;
   --sp-20: 80px; --sp-24: 96px;
-  --section-y: clamp(72px, 4.5rem + 3vw, 128px);
+  --section-y: clamp(24px, 0.25rem + 2.5vw, 48px);
 
   /* Layout */
   --container: 1280px;
