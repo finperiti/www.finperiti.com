@@ -147,11 +147,12 @@
 .factor-bar i { display: block; height: 100%; width: calc(var(--w) * 4%); border-radius: inherit; background: var(--fp-grad-brand); transform-origin: left; }
 .is-visible .factor-bar i { animation: grow-x 900ms var(--ease-out) both; }
 @keyframes grow-x { from { transform: scaleX(0); } }
-.band-scale { display: flex; gap: 4px; margin-bottom: var(--sp-5); }
-.band { flex: var(--w) 1 0; padding: 12px; border-radius: 10px; font-weight: 800; font-size: var(--fp-fs-sm); line-height: 1.2; text-align: center; }
-.band--low { background: var(--fp-ok-bg); color: var(--fp-ok); }
-.band--med { background: var(--fp-warn-bg); color: var(--fp-warn); }
-.band--high { background: var(--fp-risk-bg); color: var(--fp-risk); }
+.band-scale { display: flex; gap: 0; height: 50px; margin-bottom: var(--sp-5); border-radius: 12px; overflow: hidden; }
+.band { display: flex; flex: 1 1 0; min-width: 0; align-items: center; justify-content: center; padding: 0 2px; border-radius: 0; font-weight: 700; font-size: 0.8125rem; line-height: 1.2; text-align: center; white-space: nowrap; }
+.band--low { background: #d4f8d5; color: #075f21; }
+.band--med { background: #fff1a6; color: #704400; }
+.band--high { background: #ffd2ae; color: #8b1f0f; }
+.band--prohibited { background: #ffb4b9; color: #8d1019; }
 .rule-list { display: grid; gap: 10px; }
 .rule-list li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: var(--fp-fs-sm); color: var(--fp-text-2); line-height: 1.5; }
 .rule-list svg { width: 18px; height: 18px; color: var(--fp-jewel); margin-top: 1px; }
