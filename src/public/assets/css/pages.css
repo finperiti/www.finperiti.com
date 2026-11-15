@@ -486,7 +486,7 @@
 @media (max-width: 1180px) { .ms-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .ms-grid { grid-template-columns: 1fr; } }
 
-/* Malta launch: featured full-width card with photo, above the other four */
+/* Photo cards (Malta, Web Summit): full width up to tablet; on desktop side by side above the other three */
 .ms-card--photo { grid-column: 1 / -1; order: -1; padding-top: 0; overflow: hidden; }
 .ms-card__photo-btn {
   display: block; width: calc(100% + 2 * var(--sp-5)); margin: 0 calc(-1 * var(--sp-5)) var(--sp-3);
@@ -495,19 +495,14 @@
 .ms-card__photo-btn:focus-visible { outline: 2px solid var(--fp-bright); outline-offset: -2px; }
 .ms-card__photo { display: block; width: 100%; max-width: none; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .ms-card__gallery { padding: 0; border: 0; background: none; font: inherit; font-size: var(--fp-fs-sm); font-weight: 700; cursor: pointer; text-align: left; }
-@media (max-width: 860px) { .ms-card--photo { order: 0; } }
+@media (max-width: 860px) { .ms-card--photo { order: 0; } .ms-card--next { grid-column: 1 / -1; } } /* last card would sit alone at half width */
 @media (min-width: 861px) {
-  .ms-card--photo {
-    display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); grid-template-rows: 1fr auto auto auto auto 1fr;
-    column-gap: clamp(28px, 4vw, 56px); row-gap: var(--sp-3); padding: 0;
-  }
-  .ms-card--photo .ms-card__photo-btn { grid-column: 1; grid-row: 1 / 7; width: 100%; margin: 0; align-self: stretch; }
-  .ms-card--photo .ms-card__photo { height: 100%; min-height: 340px; aspect-ratio: auto; }
-  .ms-card--photo > .ms-card__date, .ms-card--photo > .ms-card__title, .ms-card--photo > p, .ms-card--photo > .ms-card__gallery { grid-column: 2; margin-right: clamp(24px, 4vw, 48px); }
-  .ms-card--photo > .ms-card__date { grid-row: 2; margin-top: var(--sp-6); }
-  .ms-card--photo > .ms-card__title { grid-row: 3; font-size: clamp(1.375rem, 2vw, 1.75rem); }
-  .ms-card--photo > p:not(.ms-card__date) { grid-row: 4; font-size: 1rem; max-width: 52ch; }
-  .ms-card--photo > .ms-card__gallery { grid-row: 5; justify-self: start; margin-top: var(--sp-2); margin-bottom: var(--sp-6); }
+  .ms-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .ms-card { grid-column: span 2; }
+  .ms-card--photo { grid-column: span 3; padding-bottom: var(--sp-5); }
+  .ms-card--photo .ms-card__photo { aspect-ratio: 16 / 10; }
+  .ms-card--photo > .ms-card__title { font-size: clamp(1.25rem, 1.6vw, 1.5rem); }
+  .ms-card--photo > .ms-card__gallery { margin-top: auto; padding-top: var(--sp-3); }
 }
 
 /* News photo gallery (lightbox), built by gallery.js */
