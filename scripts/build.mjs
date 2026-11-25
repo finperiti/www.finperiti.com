@@ -263,7 +263,7 @@ function minifyCss(css) {
   flush();
   return outCss.trim();
 }
-const cssOrder = ["fonts", "tokens", "base", "components", "sections", "dashboard", "pages"];
+const cssOrder = ["fonts", "tokens", "base", "components", "sections", "dashboard", "pages", "scope"];
 
 // Decorative dot arcs (logo motif), rendered once here as static SVG instead of thousands of DOM nodes
 // at runtime. Concentric arcs of dots whose size swells toward the middle of the sweep.
