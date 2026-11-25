@@ -110,6 +110,93 @@
       </div>
     </section>
 
+    <!-- EU AML 2027: are you in scope? (teaser for /eu-aml-2027) -->
+    <section class="section scope-teaser" id="in-scope" aria-labelledby="in-scope-title">
+      <div class="container">
+        <div class="scope-teaser__panel scope-teaser__panel--dark" data-reveal>
+          <div class="hero__bg" aria-hidden="true">
+            <svg class="hero__wave" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="scope-wave-a" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#25e6da" stop-opacity="0"/>
+                  <stop offset=".55" stop-color="#25e6da" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#5de6d2" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="scope-wave-b" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#0e9f90" stop-opacity="0"/>
+                  <stop offset=".6" stop-color="#16cfc5" stop-opacity=".35"/>
+                  <stop offset="1" stop-color="#16cfc5" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M-40 760 C 300 720, 520 560, 760 520 S 1180 380, 1500 120" fill="none" stroke="url(#scope-wave-a)" stroke-width="1.6"/>
+              <path d="M-40 800 C 320 760, 560 610, 800 560 S 1200 430, 1500 180" fill="none" stroke="url(#scope-wave-b)" stroke-width="1.2"/>
+              <path d="M-40 840 C 340 800, 600 660, 840 600 S 1220 480, 1500 240" fill="none" stroke="url(#scope-wave-b)" stroke-width="1"/>
+            </svg>
+            <div class="hero__dots" data-dot-field></div>
+            <div class="hero__glow"></div>
+          </div>
+          <div class="scope-teaser__copy">
+            <p class="deadline-pill"><svg aria-hidden="true"><use href="#i-alert"/></svg>From 10 July 2027</p>
+            <h2 class="section-title" id="in-scope-title">Is your business in scope of the new AML rules?</h2>
+            <p class="section-lead">The EU AML Regulation brings new types of business into scope, from jewellers and luxury car dealers to crowdfunding platforms and football clubs. Choose your industry and where you&rsquo;re based to see what it means for you and what to do next.</p>
+          </div>
+          <form class="scope-picker scope-picker--dark" action="/eu-aml-2027" method="get" data-scope-picker>
+            <div class="scope-picker__field">
+              <label class="scope-picker__label" for="scope-sector-aml">Your industry</label>
+              <select class="field__input scope-picker__select" id="scope-sector-aml" name="sector" required>
+              <option value="" selected disabled>Choose your industry</option>
+              <optgroup label="Financial services">
+                <option value="banks">Banks and other credit institutions</option>
+                <option value="payments">Payment and e-money institutions</option>
+                <option value="investment">Investment firms and wealth managers</option>
+                <option value="funds">Fund managers and investment funds</option>
+                <option value="insurance">Life insurers and insurance intermediaries</option>
+                <option value="crypto">Crypto-asset service providers</option>
+                <option value="lenders">Lenders, leasing, money transfer and currency exchange</option>
+                <option value="crowdfunding">Crowdfunding platforms and intermediaries</option>
+                <option value="credit-intermediaries">Mortgage and consumer credit brokers</option>
+              </optgroup>
+              <optgroup label="Professional services">
+                <option value="accountants">Accountants and auditors</option>
+                <option value="tax-advisers">Tax advisers</option>
+                <option value="lawyers">Solicitors, lawyers and notaries</option>
+                <option value="tcsp">Trust and company service providers</option>
+              </optgroup>
+              <optgroup label="Property">
+                <option value="estate-agents">Estate agents and property professionals</option>
+                <option value="letting-agents">Letting agents</option>
+              </optgroup>
+              <optgroup label="High value goods and art">
+                <option value="precious-metals">Dealers in precious metals and stones</option>
+                <option value="jewellers">Jewellers and watch retailers</option>
+                <option value="car-dealers">Luxury car dealers</option>
+                <option value="yachts-aircraft">Yacht and aircraft dealers and brokers</option>
+                <option value="art">Art galleries, auction houses and dealers</option>
+                <option value="free-zones">Free zones and customs warehouses</option>
+              </optgroup>
+              <optgroup label="Other businesses">
+                <option value="gambling">Gambling and betting operators</option>
+                <option value="investment-migration">Investment migration agents</option>
+                <option value="football-clubs">Professional football clubs</option>
+                <option value="football-agents">Football agents</option>
+                <option value="holding-companies">Mixed activity holding companies</option>
+                <option value="not-listed">My business isn&rsquo;t listed</option>
+              </optgroup>
+              </select>
+            </div>
+            <div class="scope-picker__field">
+              <label class="scope-picker__label" for="scope-sector-aml-country">Where you&rsquo;re based</label>
+              <select class="field__input scope-picker__select" id="scope-sector-aml-country" name="country" data-scope-country>
+                <option value="eu" selected>Not specified (EU rules)</option>
+                <optgroup label="EU countries"><option value="at">Austria</option><option value="be">Belgium</option><option value="bg">Bulgaria</option><option value="hr">Croatia</option><option value="cy">Cyprus</option><option value="cz">Czechia</option><option value="dk">Denmark</option><option value="ee">Estonia</option><option value="fi">Finland</option><option value="fr">France</option><option value="de">Germany</option><option value="gr">Greece</option><option value="hu">Hungary</option><option value="ie">Ireland</option><option value="it">Italy</option><option value="lv">Latvia</option><option value="lt">Lithuania</option><option value="lu">Luxembourg</option><option value="mt">Malta</option><option value="nl">Netherlands</option><option value="pl">Poland</option><option value="pt">Portugal</option><option value="ro">Romania</option><option value="sk">Slovakia</option><option value="si">Slovenia</option><option value="es">Spain</option><option value="se">Sweden</option></optgroup><optgroup label="Non-EU countries"><option value="uk" data-alias="UK Britain Great Britain England Scotland Wales Northern Ireland">United Kingdom</option></optgroup>
+              </select>
+            </div>
+            <button class="btn btn--primary scope-picker__go" type="submit">Check my business <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- What it does -->
     <section class="section section--tinted features" id="features" aria-labelledby="features-title">
       <div class="deco-dots deco-dots--tl" aria-hidden="true"></div>
@@ -418,5 +505,6 @@
 {{> footer}}
   <script src="/assets/js/forms.js" defer></script>
   <script src="/assets/js/pricing.js" defer></script>
+  <script src="/assets/js/scope.js" defer></script>
 </body>
 </html>
